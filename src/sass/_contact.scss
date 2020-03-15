@@ -1,0 +1,27 @@
+.contact {
+    padding: 0!important;
+    
+}
+.contact-form__holder {
+    background:$background-gradient;
+    padding: 2rem;
+    margin: 2rem;
+}
+.contact__heading_holder {
+    margin-top: 8rem;
+
+}
+.contact__heading {
+
+    font-size: 4rem;
+}
+.contact__holder {
+    background: url('../images/partners/googleMap.jpg');
+    background-size: cover;
+    background-position: cover no-repeat;
+}
+.form-control{
+    background-color: transparent!important;
+    border: 1px solid black!important;
+    border-radius: 0!important;
+}

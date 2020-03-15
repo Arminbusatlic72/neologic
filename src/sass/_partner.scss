@@ -1,0 +1,23 @@
+.partner {
+    background: url('../images/partners/background1.jpg'),linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: cover no-repeat;
+    background-color:$primary;
+    background-attachment: fixed;
+    // padding: 2rem;
+    h2 {
+        font-size: 4rem;
+    }
+}
+.partner__text_holder {
+    background-color: rgba(251, 251, 251, 0.151);
+}
+.partner__logo_holder {
+    display: block;
+    
+}
+.text-black {
+    color: black!important;
+    font-weight: 800;
+}
