@@ -9,7 +9,7 @@ const ProjectCarousel = ({ images, current }) => {
     const carouselItems = images.map((image, index) =>
         <Carousel.Item key={index}>
             <figure>
-                <img src={image.src} alt={image.alt} />
+                <img className="carousel__img" src={image.src} alt={image.alt} />
                 <figcaption>
                     <div className="bottom-bar">
                         <div className="counter">{index + 1} of {images.length}</div>

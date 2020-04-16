@@ -1,5 +1,5 @@
 .project__bcg {
-    background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%);
+    background: linear-gradient(to left, #{fade-out(#8b86a3, .2)} 0%,#{fade-out(#322e40, .2)} 100%);
 	background-position: center;
 	background-repeat: no-repeat;
     width: 100%;
@@ -17,4 +17,22 @@
     height: 50vh;
     z-index: -1;
     object-fit: cover;
+}
+.project__list-item {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+.project .img-fluid:hover {
+    cursor: pointer;
+}
+.grid {
+column-width: 400px;
+  column-gap: 10px;
+  padding: 5px;
+}
+.project__gallery-item {
+    display: inline-block;
+    height: auto;
 }

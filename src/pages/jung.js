@@ -2,8 +2,17 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import logo1 from "../images/partners/jung.png"
+import Pdf from "../pdf/jung/JUNG Switches.pdf"
+import Pdf1 from "../pdf/jung/JUNG Smart Home.pdf"
+import Pdf2 from "../pdf/jung/JUNG Hospitality.pdf"
+import Pdf3 from "../pdf/jung/JUNG Healthcare.pdf"
+import Pdf4 from "../pdf/jung/JUNG Le Corbusier.pdf"
+import Pdf5 from "../pdf/jung/JUNG LS1912.pdf"
+import sal from 'sal.js'
+
 
 const Jung = () => {
+    sal()
     return (
         <Layout>
             <SEO title="Jung" />
@@ -11,23 +20,39 @@ const Jung = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-9">
-                            <h2 className="text-white text-bold"><span className="text-black">Neologic</span> Partner</h2>
-                            <i class="fas fa-4x fa-handshake"></i>
-                            <div className="partner__text_holder">
-                                <p className="m-5 pr-4 py-5">Neologic je distributer i sistem integrator kompanije JUNG od 2015. godine.
+                            <div className="text-center text-md-left">
+                                <h2 className="text-white text-light font-weight-bold" data-sal="slide-up"
+                                    data-sal-delay="200"
+                                    data-sal-duration="500"
+                                    data-sal-easing="ease-out-bounce"><span className="text-black font-weight-lite">Neologic</span> partner</h2>
+                                <i className="fas fa-4x fa-handshake"></i>
+                            </div>
+                            <div className="p-4 mt-5 partner__text_holder">
+                                <p className="text-left font-weight-light"
+                                    data-sal="slide-left"
+                                    data-sal-delay="200"
+                                    data-sal-duration="500"
+                                    data-sal-easing="ease-out-bounce">Neologic je distributer i sistem integrator kompanije JUNG od 2015. godine.
 
-        JUNG je porodična privatna nemačka kompanija osnovana 1912. godine u Šalksmuleu gde je i danas sedište. Od samog početka poslovanje kompanije JUNG zasnovano je na tri osnovne osobine - progresu, kvalitetu i dizajnu. Zahvaljujući ovim principima, kao i odanosti proizvodnji u Nemačkoj JUNG proizvodi se danas mogu naći u reprezentativnim objektima širom sveta, kao što su Rajhstag u Berlinu, Ermitaž muzej u Sankt Petersburgu ili hotel Shnagri-La u Singapuru. Nemačka ambasada u Beogradu, fabrika Grundfos u Inđiji ili hotel Ramonda na Rtnju samo su neki od objekata u Srbiji u kojima smo ugradili i pustili u rad JUNG proizvode.
+                                    JUNG je porodična privatna nemačka kompanija osnovana 1912. godine u Šalksmuleu gde je i danas sedište. Od samog početka poslovanje kompanije JUNG zasnovano je na tri osnovne osobine - progresu, kvalitetu i dizajnu. Zahvaljujući ovim principima, kao i odanosti proizvodnji u Nemačkoj JUNG proizvodi se danas mogu naći u reprezentativnim objektima širom sveta, kao što su Rajhstag u Berlinu, Ermitaž muzej u Sankt Petersburgu ili hotel Shnagri-La u Singapuru. Nemačka ambasada u Beogradu, fabrika Grundfos u Inđiji ili hotel Ramonda na Rtnju samo su neki od objekata u Srbiji u kojima smo ugradili i pustili u rad JUNG proizvode.
 
 Portfolio kompanije JUNG sastoji se od komponenti za klasične elektro instalacije, preko bolničkih i hotelskih sistema do inteligentnih sistema za upravljanje zgradama zasnovanim na KNX standardu.</p></div>
                         </div>
-                        <div className="col-12 col-md-3 partner__text_holder">
-                            <a className="mt-5 partner__logo_holder" href="https://www.jung.de/en/">
-                                <img className="img-fluid" src={logo1} alt="partnersLogo" />
-
-
-
-                            </a>
-
+                        <div className="col-12 col-md-3">
+                            <div className="partner__text_holder-right font-weight-light">
+                                <div className="custom-card text-center">
+                                    <a href="https://www.jung.de/en/">
+                                        <img className="img-fluid" src={logo1} alt="partnersLogo" />
+                                    </a>
+                                </div>
+                                <i className="fas fa-2x fa-download p-2"></i>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank">JUNG Switches.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf1} target="_blank">JUNG Smart Home.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf2} target="_blank">JUNG Hospitality.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf3} target="_blank">JUNG Healthcare.pdf</a>
+                                <a className="pdf-tag custom-card p-2" href={Pdf4} target="_blank">JUNG Le Corbusier</a>
+                                <a className="pdf-tag custom-card p-2" href={Pdf5} target="_blank">JUNG LS1912.pdf</a>
+                            </div>
                         </div>
                     </div>
                 </div>

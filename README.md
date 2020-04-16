@@ -1,16 +1,15 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="http://www.neologic.rs">
+    <img alt="Gatsby" src="src/images/logo.jpg" width="60" />
   </a>
 </p>
 <h1 align="center">
   Gatsby x Start Bootstrap Creative
 </h1>
 
-Gatsby implementation of [Start Bootstrap's Creative](https://startbootstrap.com/previews/creative/) template.
 
-[**Demo Website**](https://johnjkerr.github.io/gatsby-creative)
+
 
 ## ✨ Features
 
@@ -18,6 +17,8 @@ Gatsby implementation of [Start Bootstrap's Creative](https://startbootstrap.com
 - [Start Bootstrap Creative](https://startbootstrap.com/previews/creative)
 - [GitHub Actions](https://github.com/features/actions)
 - [React Scrollspy](https://github.com/makotot/react-scrollspy)
+- [wp-graphql](https://github.com/wp-graphql/wp-graphql)
+- [ ACF](https://github.com/AdvancedCustomFields/acf)
 
 ## 👀 Template Differences
 
@@ -25,7 +26,8 @@ Efforts have been made to keep the implementation as close to the source templat
 
 - Scrolling to page sections uses the browser [`scrollTo`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo) function rather than a jQuery animation. This means that [browsers which do not support `scrollTo`](https://caniuse.com/#search=scrollTo) are not animated.
 - The portfolio carousel uses React Bootstrap functionality for modal and carousel rather than Magnific Popup.
-
+-This template use WordPress as headles CMS and wp-graphql and GraphiQL as a fantastic GraphQL API Explorer.
+-Custom fields on WordPress backend are created using ACF plugin.
 ## 🚀 Getting Started
 
 1.  **Create a Gatsby site.**

@@ -1,14 +1,23 @@
 import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import CategoriesList from '../components/categoriesList'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+
+
+
 const Projects = () => {
+
   const data = useStaticQuery(graphql`
     query {
         wpgraphql {
     projects {
       edges {
         node {
+          ProjectDetails {
+            godina
+            lokacija
+          }
           title(format: RENDERED)
           slug
           categories {
@@ -29,7 +38,6 @@ const Projects = () => {
       }
     }
   }
-
     }
         `)
 
@@ -42,8 +50,8 @@ const Projects = () => {
         <div className="container h-100">
           <div className="row h-100 align-items-center justify-content-center text-center">
             <div className="col-lg-10 align-self-end">
-              <h2 className="fade-in text-uppercase text-white font-weight-bold">Reference</h2>
-              <hr className="divider my-4" />
+              <h2 className="fade-in text-white font-weight-bold mb-5">Reference</h2>
+
             </div>
 
           </div>
@@ -51,55 +59,53 @@ const Projects = () => {
       </header>
       <section className="page-section">
         <div className="container">
-          <ul className="d-flex flex-row mb-3">
+          <div className="d-flex flex-row-reverse mb-4">
 
-            <li className="p-3">Svi Projekti</li>
-            <li className="p-3">Rezidencijalni Objekti</li>
-            <li className="p-3">Komercijalni Objekti</li>
-            <li className="p-3">Javni Objekti</li>
-
-
-
-          </ul>
-          <ul className="row">
+            <CategoriesList />
+          </div>
+          <div className="row flex-row">
 
             {data.wpgraphql.projects.edges.map((edge) => {
-              let edges = edge.node.categories.edges;
+              // const edges = edge.node.categories.edges;
 
-              let categoryName = edges.map(edge => {
-                return edge.node.name;
+              // const categoryName = edges.map(edge => {
+              //   return edge.node.name;
 
-              });
+              // });
 
-              let src = edge.node.featuredImage.sourceUrl
-              let alt = edge.node.featuredImage.altText
+              const src = edge.node.featuredImage.sourceUrl
+              const alt = edge.node.featuredImage.altText
 
 
               return (
-                <Link className="portfolio-box" to={edge.node.slug}>
-                  <li className="col-12 col-md-5 text-center" key={edge.node.id}>
-                    <img className="img-fluid" src={src} alt={alt} />
-                    <div className="portfolio-box-caption">
+                <div className="col-xs-12 col-md-6 mb-3" key={edge.node.id}>
+                  <Link to={edge.node.slug} >
+                    <div className="projects__container" >
+                      <img className="img-fluid" src={src} alt={alt} />
+                      <div className="projects__overlay text-black">
+                        <div className="project__heading-wrapp text-left">
 
+                          <h2>{edge.node.title}</h2>
+                          <p>{edge.node.ProjectDetails.lokacija}</p>
 
-                      <div className="project-category text-white-50">
-                        <p>{categoryName}</p>
-                      </div>
-                      <div className="project-name">
-                        <h2>{edge.node.title}</h2>
-                        <p>{edge.node.date}</p>
+                          <p>{edge.node.ProjectDetails.godina}</p>
+
+                        </div>
+
                       </div>
                     </div>
-                  </li>
-                </Link>
+                  </Link>
+                </div>
               )
             })}
 
-          </ul>
+          </div>
         </div>
       </section>
     </Layout>
 
   )
 }
+
+
 export default Projects

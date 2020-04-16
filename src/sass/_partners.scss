@@ -1,35 +1,10 @@
 .partners {
     padding: 0;
-    .fade-in {
-		animation: fadeIn ease 5s;
-		-webkit-animation: fadeIn ease 5s;
-		-moz-animation: fadeIn ease 5s;
-		-o-animation: fadeIn ease 5s;
-		-ms-animation: fadeIn ease 5s;
-	  }
-	  
-	  
-	  @keyframes fadeIn{
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
-	  
-	  @-moz-keyframes fadeIn {
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
+    
 }
 .partners__bcg {
     
-	background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../images/modern-office.jpg');
+	background: linear-gradient(to left, #{fade-out(#8b86a3, .2)} 0%,#{fade-out(#322e40, .2)} 100%), url('../images/partners/partneri.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -39,32 +14,41 @@
     h2 {
         font-size: 3rem;
     }
-    
-    
 
 }
 .partners__bcg_white {
+    
 	@media only screen and (max-width: 600px) {
 		height: 70vh;
 	}
 }
 .partners__background_blue {
-    background: url('../images/partners/background1.jpg'),linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%);
+    // background: url('../images/partners/background1.jpg');
     background-blend-mode: overlay;
     background-size: cover;
     background-position: cover no-repeat;
-    background-color:$primary;
+    // background-color: $primary;
+    background-color:#E6E7E8;
+
+
+
     background-attachment: fixed;
     padding: 2rem;
-}
-.partners__logo_holder {
-    border: 1px solid black;
-    // height: 100%;
-    // width: 100%;
-    // position: relative;
-    
 }
 .partners__img {
     height: 60px;
     width: 150px;
+}
+.partners__custom-card{
+    border-radius: 5px;
+    padding: 30px 10px;
+	cursor: pointer;
+	filter: grayscale(100%);
+     &:hover {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
+	transition: 0.3s ease-in;
+	filter: none;
+    
+    }
 }

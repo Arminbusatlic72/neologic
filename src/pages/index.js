@@ -44,27 +44,27 @@ export default class IndexPage extends React.Component {
             <div className="row h-100 align-items-center justify-content-center text-center">
               <div className="col-lg-10 align-self-end">
                 <h1 className="fade-in text-uppercase text-white font-weight-bold">Kompanija NEOLOGIC</h1>
-                <hr className="divider my-4" />
+                {/* <hr className="divider my-4" /> */}
               </div>
               <div className="col-lg-8 align-self-baseline">
-                <p className="fade-in text-white-75 font-weight-light mb-5">Bavi se inteligentnim upravljanjem procesima, prije svega u domenu automatizacije zgrada. Rešenja zasnovana na otvorenim bus sistemima.</p>
-                <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Saznajte više</a>
+                <p className="fade-in text-white-75 font-weight-light mb-5">Planiranje, projektovanje i programiranje kućne automatike i BMS sistema</p>
+                <a className="custom-button js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Saznajte više</a>
               </div>
             </div>
           </div>
         </header>
 
-        <section className="page-section bg-primary" id="about">
+        <section className="page-section" id="about">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 about">
-                <h2 className="text-white mt-0">O Nama</h2>
+                <h2 className="mb-5 font-weight-bold">O nama</h2>
 
-                <hr className="light my-4 divider about" />
-                <p className="text-white mb-4">Kompanija Neologic d.o.o. bavi se inteligentnim upravljanjem procesima, pre svega u domenu automatizacije zgrada. Rešenja, zasnovana na otvorenim bus sistemima kao što su KNX, BACnet, Modbus, M-Bus, DALI i dr. obezbeđuju sigurnu investiciju u budućnost.
+                {/* <hr className="light my-4 divider about" /> */}
+                <p className="font-weight-light mb-4">Kompanija Neologic d.o.o. bavi se inteligentnim upravljanjem procesima, pre svega u domenu automatizacije zgrada. Rešenja, zasnovana na otvorenim bus sistemima kao što su KNX, BACnet, Modbus, M-Bus, DALI i dr. obezbeđuju sigurnu investiciju u budućnost.
 
 Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vodećim kompanijama nudimo vrhunske proizvode i servise za sve sisteme, bilo da je u pitanju automatizacija rezidencijalnog objekta ili kompleksan sistem centralnog nadzora i upravljanja.</p>
-                <a className="btn btn-light btn-xl mb-5 js-scroll-trigger" href="#services"
+                <a className="custom-button__black text-center text-md-left mb-5 js-scroll-trigger" href="#services"
                   onClick={Scroller.handleAnchorScroll}>Saznajte više!</a>
               </div>
               <div className="col-lg-6 text-left">
@@ -80,68 +80,80 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
         <section className="page-section services__front_bcg" id="services">
 
           <div className="container-fluid text-center">
-            <h2 className="text-center mt-0">Usluge</h2>
-            <hr className="divider my-4" />
+            <h2 className="mb-5 font-weight-bold">Usluge</h2>
+            {/* <hr className="divider my-4" /> */}
             <div className="row services__icons-wrapp">
               <div className="col-lg-2 col-md-6 offset-lg-1 text-center">
-                <Link className="services_link" to="/usluge/">
-                  <div className="mt-5">
+                <div className="custom-card">
+                  <Link className="services_link" to="/usluge/">
+
                     <i className="fas fa-4x fa-laptop text-primary mb-4"></i>
                     <h3 className="h4 mb-2">Konsalting</h3>
-                    <p className="text-muted mb-0">Konsultantske usluge u svim fazama projekta.</p>
-                  </div>
-                </Link>
+
+                  </Link>
+                </div>
               </div>
               <div className="col-lg-2 col-md-6 text-center">
-                <Link className="services_link" to="/usluge/">
-                  <div className="mt-5">
-                    <i class="fas fa-4x fa-project-diagram text-primary mb-4"></i>
+                <div className="custom-card">
+
+                  <Link className="services_link" to="/usluge/">
+
+                    <i className="fas fa-4x fa-project-diagram text-primary mb-4"></i>
 
                     <h3 className="h4 mb-2">Planiranje  i projektovanje
                     </h3>
-                    <p className="text-muted mb-0">U bliskom kontaktu sa investitorima, arhitektama, projektantima i električarima planiramo i projektujemo sistem.</p>
-                  </div>
-                </Link>
+
+
+                  </Link>
+                </div>
               </div>
               <div className="col-lg-2 col-md-6 text-center">
-                <Link className="services_link" to="/usluge/">
-                  <div className="mt-5">
+                <div className="custom-card">
+
+                  <Link className="services_link" to="/usluge/">
+
                     <i className="fas fa-4x fa-code text-primary mb-4"></i>
                     <h3 className="h4 mb-2">Programiranje</h3>
-                    <p className="text-muted mb-0">Prilikom programiranja posebno je važno obezbediti da sistem budem jednostavan za upotrebu i održavanje.</p>
-                  </div>
-                </Link>
+
+                  </Link>
+                </div>
               </div>
 
               <div className="col-lg-2 col-md-6  text-center">
-                <Link className="services_link" to="/usluge/">
-                  <div className="mt-5">
-                    <i class="fas fa-4x fa-door-open text-primary mb-4"></i>
+                <div className="custom-card">
+
+                  <Link className="services_link" to="/usluge/">
+
+                    <i className="fas fa-4x fa-door-open text-primary mb-4"></i>
 
                     <h3 className="h4 mb-2">Puštanje u rad</h3>
-                    <p className="text-muted mb-0">Nakon programiranja vrši se puštanje sistema u rad i provera rada sistema.</p>
-                  </div>
-                </Link>
+
+
+                  </Link>
+                </div>
 
               </div>
               <div className="col-lg-2 col-md-6 offset-md-3 offset-lg-0 text-center">
-                <Link className="services_link" to="/usluge/">
+                <div className="custom-card">
 
-                  <div className="mt-5">
-                    <i class="fas fa-4x fa-tools text-primary mb-4"></i>
+                  <Link className="services_link" to="/usluge/">
+
+
+                    <i className="fas fa-4x fa-tools text-primary mb-4"></i>
 
                     <h3 className="h4 mb-2">Održavanje</h3>
-                    <p className="text-muted mb-0">Po završenom poslu pratimo rad celokupnog sistema i pružamo tehničku podršku klijentima. </p>
-                  </div>
-                </Link>
+
+
+                  </Link>
+                </div>
 
               </div>
 
 
             </div>
 
-            <h2 className="mb-4">Pogledajte sve naše usluge</h2>
-            <Link className="btn btn-primary btn-xl my-5" to="/usluge/">Saznajte Više</Link>
+            {/* <h2 className="mb-5">Pogledajte sve naše usluge</h2> */}
+            <Link className="custom-button__primary mb-4" to="/usluge/">Saznajte Više</Link>
 
           </div>
 
@@ -150,92 +162,61 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
         <section id="portfolio">
           <div className="container-fluid p-0">
             <div className="row no-gutters">
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
-                  <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+              <div className="mb-3 mb-md-0 col-lg-4 col-sm-6">
+                <a className="" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
+                  <div className="projects__container">
+                    <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid} />
+                    <div className="projects__overlay text-black">
+                      <div className="project__heading-wrapp text-left">
+                        <h3>Gir Apartmani</h3>
+                        <p>Beograd</p>
+                        <p>2017</p>
+                      </div>
                     </div>
-                    <div className="project-name">
-                      Project Name
+                  </div>
+                </a>
+              </div>
+              <div className="mb-3 mb-md-0 col-lg-4 col-sm-6">
+                <a className="" href="img/portfolio/fullsize/2.jpg" onClick={this.handlePortfolioClick.bind(this, 1)}>
+                  <div className="projects__container">
+
+                    <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid} />
+                    <div className="projects__overlay text-black">
+                      <div className="project__heading-wrapp text-left">
+                        <h3>Dedinje Penthaus</h3>
+                        <p>Beograd</p>
+                        <p>2017</p>
+                      </div>
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/2.jpg" onClick={this.handlePortfolioClick.bind(this, 1)}>
-                  <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/3.jpg" onClick={this.handlePortfolioClick.bind(this, 2)}>
-                  <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
+                <a href="img/portfolio/fullsize/3.jpg" onClick={this.handlePortfolioClick.bind(this, 2)}>
+                  <div className="projects__container">
+                    <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid} />
+                    <div className="projects__overlay text-black">
+                      <div className="project__heading-wrapp text-left">
+                        <h3>BB Stan</h3>
+                        <p>Beograd</p>
+                        <p>2017</p>
+
+                      </div>
                     </div>
                   </div>
                 </a>
               </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="images/portfolio/fullsize/4.jpg" onClick={this.handlePortfolioClick.bind(this, 3)}>
-                  <Img fluid={this.props.data.images.edges[3].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/5.jpg" onClick={this.handlePortfolioClick.bind(this, 4)}>
-                  <Img fluid={this.props.data.images.edges[4].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/6.jpg" onClick={this.handlePortfolioClick.bind(this, 5)}>
-                  <Img fluid={this.props.data.images.edges[5].node.childImageSharp.fluid} />
-                  <div className="portfolio-box-caption p-3">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
+
+
+
             </div>
           </div>
         </section>
 
         <section className="page-section bg-dark text-white">
           <div className="container text-center">
-            <h2 className="mb-4">Pogledajte sve naše projekte</h2>
-            <Link className="btn btn-light btn-xl" to="/projekti">Saznaj više</Link>
+            <h2 className="mb-5 font-weight-bold">Pogledajte sve naše projekte</h2>
+            <Link className="custom-button" to="/projekti">Saznaj više</Link>
           </div>
         </section>
 
@@ -244,9 +225,9 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mt-0">Kontaktirajte nas!</h2>
-                <hr className="divider my-4" />
-                <p className="text-muted mb-5">Da li ste spremni da započnemo Vaš sledeći projekat zajedno? Pozovite nas ili pošaljite email, odgovorićemo Vam u najkraćem mogučem periodu!</p>
+                <h2 className="mb-5 font-weight-bold">Kontaktirajte nas!</h2>
+
+                {/* <p className="text-muted mb-5">Da li ste spremni da započnemo Vaš sledeći projekat zajedno? Pozovite nas ili pošaljite email, odgovorićemo Vam u najkraćem mogučem periodu!</p> */}
               </div>
             </div>
             <div className="row">

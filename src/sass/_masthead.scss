@@ -4,11 +4,12 @@ header.masthead {
 	padding-bottom: calc(10rem - #{$navbar-height});
 	// replace the masthead.jpg image in the /img directory to change the image
 	// if the image name change, make sure to update the url path below!
-	background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../images/slider-bg.jpg');
+	background: linear-gradient(to left, #{fade-out(#8b86a3, .2)} 0%,#{fade-out(#322e40, .2)} 100%), url('../images/slider-bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	
 	h1 {
 		font-size: 2.25rem;
 	}
@@ -29,57 +30,5 @@ header.masthead {
 			font-size: 3.5rem;
 		}
 	}
-	.fade-in {
-		animation: fadeIn ease 5s;
-		-webkit-animation: fadeIn ease 5s;
-		-moz-animation: fadeIn ease 5s;
-		-o-animation: fadeIn ease 5s;
-		-ms-animation: fadeIn ease 5s;
-	  }
-	  
-	  
-	  @keyframes fadeIn{
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
-	  
-	  @-moz-keyframes fadeIn {
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
-	  
-	  @-webkit-keyframes fadeIn {
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
-	  
-	  @-o-keyframes fadeIn {
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
-	  
-	  @-ms-keyframes fadeIn {
-		0% {
-		  opacity:0;
-		}
-		100% {
-		  opacity:1;
-		}
-	  }
+	
 }

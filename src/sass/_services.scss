@@ -9,7 +9,7 @@
 }
 .services__bcg {
     
-	background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../images/architecture-22039_1280.jpg');
+	background: linear-gradient(to left, #{fade-out(#8b86a3, .2)} 0%,#{fade-out(#322e40, .2)} 100%), url('../images/architecture-22039_1280.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -20,8 +20,6 @@
         font-size: 3rem;
     }
     
-    
-
 }
 
 .services__icons-wrapp {
@@ -34,16 +32,7 @@
   text-decoration: none;
 
 }
-.mt-5 {
-    border-radius: 5px;
-    padding: 40px 10px;
-    cursor: pointer;
-     &:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
-    transition: 0.3s ease-in;
-    
-    }
-}
+
 .services_main {
   
     h2 {
@@ -57,7 +46,7 @@
     height: 450px;
     background-attachment: fixed;
     padding: 3rem;
-    transform: translateZ(0px);
+    transform: translateZ(-1px) scale(1);
 }
 .commercial__background_img {
     background-image: url('../images/commercialBuildingsBcg1.jpg'),linear-gradient(to bottom, #{fade-out($brown, 1)} 0%,#{fade-out($brown, 1)} 100%);
@@ -66,17 +55,21 @@
     height: 450px;
     background-attachment: fixed;
     padding: 3rem;
-    transform: translateZ(0px);
+    transform: translateZ(-1px) scale(1);
+    
 
 }
 .residential__background_img {
     background-image: url('../images/residentialBcg.png'),linear-gradient(to bottom, #{fade-out($brown, 1)} 0%,#{fade-out($brown, 1)} 100%);
     background-size: cover;
     background-position: cover no-repeat;
+    transform: translateZ(-1px) scale(1);
+
     height: 450px;
     background-attachment: fixed;
     padding: 3rem;
-    transform: translateZ(0px);
+  
+    
 }
 .background_text {
   
@@ -84,20 +77,21 @@
     @media only screen and (max-width: 600px) {
       height: auto;
       padding: 2rem;
+      z-index: 2;
     
     }
 
 @media only screen and (min-width: 768px) {
   padding: 2rem;
 }
-    background: url('../images/featue-bg.jpg'),linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%);
+  
     background-blend-mode: overlay;
-    background-color:#E3B73E;
+    background-color:#FBC441;
     background-size: cover;
     background-position: cover no-repeat;
     height: 450px;
     padding: 6rem 5rem;
-    transform: translateZ(3px);   
+    // transform: translateZ(3px);   
     
  
 }

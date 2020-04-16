@@ -2,26 +2,50 @@
     padding: 0!important;
     
 }
+.contact__map-wrapp {
+    
+    overflow:hidden;
+    // padding-bottom:56.25%;
+    position:relative;
+    height: 80vh;
+
+    }
 .contact-form__holder {
+    margin-bottom: 3rem;
     background:$background-gradient;
     padding: 2rem;
-    margin: 2rem;
+    
 }
-.contact__heading_holder {
+.contact__heading-holder {
     margin-top: 8rem;
 
+    
+
+}
+.contact__heading-holder-right {
+    margin-top: 8rem;
+    @media only screen and (max-width: 600px) {
+        margin-top: 0;
+    }
 }
 .contact__heading {
 
     font-size: 4rem;
 }
 .contact__holder {
-    background: url('../images/partners/googleMap.jpg');
-    background-size: cover;
-    background-position: cover no-repeat;
+    padding:2rem
+    
 }
 .form-control{
     background-color: transparent!important;
-    border: 1px solid black!important;
+    border: 2px solid black!important;
     border-radius: 0!important;
+}
+.contact__text-black {
+    display: block;
+    color: black;
+    font-weight: 100;
+}
+label {
+    display: block;
 }

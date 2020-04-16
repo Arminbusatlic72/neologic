@@ -9,7 +9,7 @@ const PortfolioCarousel = ({ images, current }) => {
   const carouselItems = images.map((image, index) =>
     <Carousel.Item key={index}>
       <figure>
-        <Img fluid={image.node.childImageSharp.fluid}/>
+        <Img fluid={image.node.childImageSharp.fluid} />
         <figcaption>
           <div className="bottom-bar">
             <div className="counter">{index + 1} of {images.length}</div>

@@ -1,13 +1,10 @@
 import React from "react"
-import { Navbar, Nav, NavDropdown } from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 import Scroller from "../components/scroller"
 
-import logo from '../images/logoT.png';
+import logo from '../images/logo.png';
 import { Link } from 'gatsby'
 
-const activeStyle = {
-  color: " #eece1a",
-}
 
 
 export default class Header extends React.Component {
@@ -32,24 +29,24 @@ export default class Header extends React.Component {
             <Navbar.Collapse id="navbarResponsive">
               <ul className="navbar-nav ml-auto my-2 my-lg-0">
 
-                <li className="nav-item" style={this.activeStyle}>
+                <li className="nav-item" >
                   <Link className="nav-link" to="/" >
                     Početna
                   </Link>
                 </li>
-                <li className="nav-item" activeStyle={this.activeStyle}>
+                <li className="nav-item">
                   <Link className="nav-link" to="/usluge">
                     Usluge
                   </Link>
                 </li>
-                <li className="nav-item" activeStyle={this.activeStyle}>
+                <li className="nav-item">
                   <Link className="nav-link" to="/partneri">Partneri</Link>
 
                 </li>
-                <li className="nav-item" activeStyle={this.activeStyle}>
+                <li className="nav-item">
                   <Link className="nav-link" to="/projekti">Reference</Link>
                 </li>
-                <li className="nav-item" activeStyle={this.activeStyle}>
+                <li className="nav-item">
                   <Link className="nav-link" to="/kontakt">Kontakt</Link>
                 </li>
               </ul>

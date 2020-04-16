@@ -1,104 +1,137 @@
 import React from 'React'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import googleMap from '../components/googleMap'
-import GoogleMapReact from 'google-map-react'
+import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
+import ContactForm from '../components/contactForm/ContactForm';
 
 
 
 
-const Kontakt = () => {
+const mapStyles = {
+    map: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%'
+    }
+};
 
-    return (
-        <Layout>
-            <SEO title="Kontakt" />
-            <GoogleMapReact />
-            <section className="page-section contact">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 col-md-6">
-                            <div className="fade-in p-4 text-left contact__heading_holder" >
-                                <h2 className="text-primary pb-4 font-weight-bold contact__heading"><span className="text-black">Kontaktirajte</span> Nas</h2>
-                                <p className="text-bold">Da li ste spremni da započnemo Vaš sledeći projekat zajedno?</p>
-                                <p className="text-muted mb-5"> Pozovite nas ili pošaljite email, odgovorićemo Vam u najkraćem mogučem periodu!</p>
+class Kontakt extends React.Component {
+    state = {
+        showingInfoWindow: false,  //Hides or the shows the infoWindow
+        activeMarker: {},          //Shows the active marker upon click
+        selectedPlace: {
+            name: 'Partizanski put 1',
+            lat: 44.843712,
+            lng: 20.483959
+        }          //Shows the infoWindow to the selected place upon a marker
+    };
+    onMarkerClick = (props, marker, e) =>
+        this.setState({
+            selectedPlace: props,
+            activeMarker: marker,
+            showingInfoWindow: true
+        });
+
+    onClose = props => {
+        if (this.state.showingInfoWindow) {
+            this.setState({
+                showingInfoWindow: false,
+                activeMarker: null
+            });
+        }
+    };
+
+    render() {
+
+        return (
+            <Layout>
+                <SEO title="Kontakt" />
+
+                <section className="page-section contact contact__bcg">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 col-md-6">
+                                <div className="fade-in text-left contact__heading-holder" >
+                                    <h2 className="text-primary pb-4 font-weight-bold contact__heading"><span className="contact__text-black font-weight-light">Kontaktirajte</span> Nas</h2>
+                                </div>
+                            </div>
+
+
+                            <div className="col-12 col-md-6">
+                                <div className="fade-in py-4 text-left contact__heading-holder-right" >
+                                    <p className="font-weight-light">Da li ste spremni da započnemo Vaš sledeći projekat zajedno?
+                                 Pozovite nas ili pošaljite email, odgovorićemo Vam u najkraćem mogučem periodu!</p>
+
+                                </div>
 
                             </div>
 
-                            <div className="text-left p-3 mt-5 d-flex flex-column contact__holder">
-                                <h3 className="py-3">Kontakti:</h3>
-                                <ul>
+
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                                <div className="mt-5 contact__map-wrapp">
+
+
+                                    <Map
+                                        google={window.google}
+                                        zoom={16}
+                                        style={mapStyles}
+                                        initialCenter={{
+                                            lat: 44.843712,
+                                            lng: 20.483959
+                                        }}
+                                    >
+                                        <Marker onClick={this.onMarkerClick}
+                                            name={'Partizanski blok 1 br. 7/10'} />
+
+                                        <InfoWindow onClose={this.onInfoWindowClose}>
+                                            <div>
+                                                <h1>{this.state.selectedPlace.name}</h1>
+                                            </div>
+                                        </InfoWindow>
+                                    </Map>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-6 contact__holder">
+                                <p className="mt-5">Pošaljite nam email putem kontakt forme ili nas kontaktirajte direktno.</p>
+
+
+                                <h3 className="py-5 text-black">Kontakti:</h3>
+                                <ul className="text-black py-3">
                                     <li>
-                                        <i className="fas fa-map-marker fa-2x mr-5 mb-3 taxt-black"></i>
-                                        <adress>Partizanski blok 1 br. 7/10, Beograd, Srbija</adress>
+                                        <i className="fas fa-map-marker fa-2x mr-5 mb-3"></i>
+                                        <address className="d-inline-block">Partizanski blok 1 br. 7/10, Beograd, Srbija</address>
 
                                     </li>
                                     <li>
-                                        <i className="fas fa-phone fa-2x mr-5 mb-3 taxt-black"></i>
+                                        <i className="fas fa-phone fa-2x mr-5 mb-3"></i>
                                         + 381 64 258 92 15
 
                                     </li>
                                     <li>
-                                        <i className="fas fa-envelope fa-2x mr-5 mb-3 text-black"></i>
-                                        info@neologic.rs
+                                        <i className="fas fa-envelope fa-2x mr-5 mb-3"></i>
+                                        <a className="d-inline-block" href="mailto:info@neologic.rs">info@neologic.rs</a>
+
 
                                     </li>
                                 </ul>
 
-
-
-
-
+                            </div>
+                            <div className="col-lg-6">
+                                <ContactForm />
                             </div>
 
                         </div>
-
-
-
-
-                        <div className="col-12 col-md-6 partner">
-                            <div className="fade-in p-4 text-left contact__heading_holder" >
-                                <h2 className="text-white font-weight-bold contact__heading"><span className="text-black">Pošaljite Nam </span>Poruku</h2>
-
-                            </div>
-                            <form className="contact-form__holder">
-                                <div className="form-group my-3">
-                                    <label for="name">Ime</label>
-                                    <input className="form-control"></input>
-
-                                </div>
-                                <div className="form-group my-3">
-                                    <label for="name">Prezime</label>
-                                    <input className="form-control"></input>
-
-                                </div>
-                                <div className="form-group my-3">
-                                    <label for="name">email</label>
-                                    <input className="form-control"></input>
-
-                                </div>
-                                <div className="form-group my-3">
-                                    <label for="name">Vaša Poruka</label>
-                                    <textarea className="form-control" id="" rows="4" cols="30"></textarea>
-
-                                </div>
-                                <a className="btn btn-light btn-xl my-5" href="/"
-                                >Pošaljite Poruku</a>
-
-
-                            </form>
-
-
-
-                        </div>
-
-
                     </div>
-                </div>
-            </section>
-        </Layout >
-    )
+                </section>
+            </Layout >
+        )
+    }
 }
-
-
-
-export default Kontakt
+export default GoogleApiWrapper({
+    apiKey: ("AIzaSyAk3SOK5gCRxO2HSHXnknmsNbthhmN-yQU"), version: 3.31
+})(Kontakt)

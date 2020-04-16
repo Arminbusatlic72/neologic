@@ -5,13 +5,20 @@
     background-position: cover no-repeat;
     background-color:$primary;
     background-attachment: fixed;
-    // padding: 2rem;
+    
     h2 {
         font-size: 4rem;
     }
 }
 .partner__text_holder {
     background-color: rgba(251, 251, 251, 0.151);
+    padding: 1rem;
+}
+.partner__text_holder-right {
+    background-color: rgba(251, 251, 251, 0.151);
+    padding: 1rem;
+    min-height: 100%;
+
 }
 .partner__logo_holder {
     display: block;
@@ -19,5 +26,15 @@
 }
 .text-black {
     color: black!important;
-    font-weight: 800;
+    font-weight: 100;
+}
+.pdf-tag {
+    color: black;
+    display:block;
+
+}
+.pdf-tag:hover {
+    color: black;
+    text-decoration: none;
+    
 }

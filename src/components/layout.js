@@ -62,7 +62,22 @@ export default class Layout extends React.Component {
         <main>{this.props.children}</main>
         <footer className="bg-light py-5">
           <div className="container">
-            <div className="small text-center text-muted">Copyright &copy; 2020 Neologic.rs. Allrights reserved</div>
+            <div className="row">
+              <div className="col-6 text-left">
+                <div className="small text-left text-muted">Copyright &copy; 2020 Neologic.rs. Allrights reserved</div>
+
+              </div>
+              <div className="col-6 text-right">
+                <ul className="social-media__list">
+
+                  <li className="p-2 social-media__list-item"><a href="https://www.instagram.com/neologic_rs/"><i className="fab fa-2x fa-instagram-square text-muted"></i></a></li>
+                </ul>
+              </div>
+
+
+
+
+            </div>
           </div>
         </footer>
       </div>

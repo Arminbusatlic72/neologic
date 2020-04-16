@@ -5,6 +5,8 @@ const path = require("path")
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const projectTemplate = path.resolve("./src/templates/projekat.js")
+  const categoryTemplate = path.resolve("./src/templates/category.js")
+
   const res = await graphql(`
     query {
         wpgraphql {
@@ -14,6 +16,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
                         slug
                     }
                 }
+            }
+            categories {
+              edges {
+                node {
+                  id
+                  name
+                  slug
+                }
+              }
             }
         }
     }
@@ -28,5 +39,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  res.data.wpgraphql.categories.edges.forEach((edge) => {
+    createPage({
+      component: categoryTemplate,
+      path: `/kategorija/${edge.node.slug}`,
+      context: {
+        id: edge.node.id,
+      },
+    })
+  })
+
+
+
+
 }
 
