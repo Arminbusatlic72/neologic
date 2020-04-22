@@ -168,7 +168,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
                     <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid} />
                     <div className="projects__overlay text-black">
                       <div className="project__heading-wrapp text-left">
-                        <h3>Gir Apartmani</h3>
+                        <h3>Dedinje penthaus</h3>
                         <p>Beograd</p>
                         <p>2017</p>
                       </div>
@@ -183,9 +183,9 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
                     <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid} />
                     <div className="projects__overlay text-black">
                       <div className="project__heading-wrapp text-left">
-                        <h3>Dedinje Penthaus</h3>
+                        <h3>Gir apartmani</h3>
                         <p>Beograd</p>
-                        <p>2017</p>
+                        <p>2018</p>
                       </div>
                     </div>
                   </div>
@@ -197,9 +197,9 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
                     <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid} />
                     <div className="projects__overlay text-black">
                       <div className="project__heading-wrapp text-left">
-                        <h3>BB Stan</h3>
+                        <h3>BB stan</h3>
                         <p>Beograd</p>
-                        <p>2017</p>
+                        <p>2018</p>
 
                       </div>
                     </div>

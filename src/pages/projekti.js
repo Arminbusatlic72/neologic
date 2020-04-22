@@ -66,22 +66,20 @@ const Projects = () => {
           <div className="row flex-row">
 
             {data.wpgraphql.projects.edges.map((edge) => {
-              // const edges = edge.node.categories.edges;
 
-              // const categoryName = edges.map(edge => {
-              //   return edge.node.name;
 
-              // });
-
-              const src = edge.node.featuredImage.sourceUrl
-              const alt = edge.node.featuredImage.altText
+              const src = (edge.node.featuredImage) ? edge.node.featuredImage.sourceUrl : null
+              const alt = (edge.node.featuredImage) ? edge.node.featuredImage.altText : null
 
 
               return (
-                <div className="col-xs-12 col-md-6 mb-3" key={edge.node.id}>
+                <div className="col-xs-12 col-md-6 mb-5" key={edge.node.id}>
                   <Link to={edge.node.slug} >
+
                     <div className="projects__container" >
-                      <img className="img-fluid" src={src} alt={alt} />
+                      {src && alt != null &&
+                        <img className="img-fluid" src={src} alt={alt} />
+                      }
                       <div className="projects__overlay text-black">
                         <div className="project__heading-wrapp text-left">
 

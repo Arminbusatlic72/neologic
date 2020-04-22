@@ -125,7 +125,7 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
                         <div className="col-md-6 order-5 d-flex justify-content-center align-items-center text-white commercial__background_img">
                             <h2 className="font-weight-bold" data-sal="slide-down"
-                                data-sal-delay="200"
+                                data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Komercijalni Objekti</h2>
 

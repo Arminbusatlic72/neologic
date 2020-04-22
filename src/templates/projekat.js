@@ -86,8 +86,8 @@ class Project extends React.Component {
 
     this.handlePortfolioClick = this.handlePortfolioClick.bind(this);
     this.setModal = this.setModal.bind(this);
-    this.src = this.props.data.wpgraphql.projectBy.featuredImage.sourceUrl;
-    this.alt = this.props.data.wpgraphql.projectBy.featuredImage.altText;
+    this.src = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.sourceUrl : null
+    this.alt = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.altText : null
     const projectDetails = this.props.data.wpgraphql.projectBy.ProjectDetails;
 
     this.src1 = (projectDetails.image) ? projectDetails.image.sourceUrl : null
@@ -120,7 +120,7 @@ class Project extends React.Component {
     ]
 
     this.projectImages = projectImagesArr.filter((img) => img.src != null);
-    console.log(this.projectImages)
+
 
 
   }
@@ -148,7 +148,9 @@ class Project extends React.Component {
       <Layout>
         < SEO title="/project" />
         <header className="project__bcg">
-          <img className="header__bcg" src={this.src} alt={this.alt} />
+          {this.src && this.alt != null &&
+            <img className="header__bcg" src={this.src} alt={this.alt} />
+          }
 
 
           <div className="container h-100">
