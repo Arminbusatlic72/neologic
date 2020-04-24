@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Logo3 from "../images/partners/ComfortClick-Logo_sm.png"
-import Pdf from "../pdf/comfortclick/comfortclick.pdf"
+import Pdf from "../pdf/comfortclick/Comfortclick.pdf"
 
 
 import sal from 'sal.js'
