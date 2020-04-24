@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Logo4 from "../images/partners/Thinknx.png"
-import Pdf from "../pdf/thinknx/thinknx.pdf"
+import Pdf from "../pdf/thinknx/Thinknx.pdf"
 
 
 
