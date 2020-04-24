@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import PortfolioModal from "../components/portfolio/modal"
-import ProjectCarousel from '../components/portfolio/projectCarousel'
+import ProjectCarousel from '../components/portfolio/ProjectCarousel'
 
 export const query = graphql`
 query($slug: String!) {

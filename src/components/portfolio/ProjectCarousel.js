@@ -11,7 +11,7 @@ const ProjectCarousel = ({ images, current }) => {
             <figure>
                 <img className="carousel__img" src={image.src} alt={image.alt} />
                 <figcaption>
-                    <div className="bottom-bar">
+                    <div className="bottom-bar test">
                         <div className="counter">{index + 1} of {images.length}</div>
                     </div>
                 </figcaption>
