@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import PortfolioModal from "../components/portfolio/modal"
-import ProjectCarousel from '../components/portfolio/ProjectCarousel'
+import ProjectCarousel from '../components/portfolio/projectCarousel'
 
 export const query = graphql`
 query($slug: String!) {
@@ -183,39 +183,40 @@ class Project extends React.Component {
             </div>
             <div className="grid">
               {this.src1 && this.alt1 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 0)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 0)} onKeyDown={this.handlePortfolioClick.bind(this, 0)}>
                   <img className="img-fluid" src={this.src1} alt={this.alt1} />
                 </div>}
               {this.src3 && this.alt3 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 1)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 1)} onKeyDown={this.handlePortfolioClick.bind(this, 1)} >
                   <img className="img-fluid" src={this.src2} alt={this.alt2} />
                 </div>}
               {this.src3 && this.alt3 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 2)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 2)} onKeyDown={this.handlePortfolioClick.bind(this, 2)} >
                   <img className="img-fluid" src={this.src3} alt={this.alt3} />
                 </div>}
               {this.src4 && this.alt4 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 3)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 3)} onKeyDown={this.handlePortfolioClick.bind(this, 3)} >
                   <img className="img-fluid" src={this.src4} alt={this.alt4} />
                 </div>}
               {this.src5 && this.alt5 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 4)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 4)} onKeyDown={this.handlePortfolioClick.bind(this, 4)} >
                   <img className="img-fluid" src={this.src5} alt={this.alt5} />
                 </div>}
               {this.src6 && this.alt6 !== null &&
-                <div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 5)}>
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 5)} onKeyDown={this.handlePortfolioClick.bind(this, 5)} >
                   <img className="img-fluid" src={this.src6} alt={this.alt6} />
                 </div>}
 
               {this.src7 && this.alt7 !== null &&
 
-                < div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 6)}>
+                < div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 6)} onKeyDown={this.handlePortfolioClick.bind(this, 6)} >
                   <img className="img-fluid" src={this.src7} alt={this.alt7} />
                 </div>
 
               }
               {this.src8 && this.alt8 !== null &&
-                < div className="mb-2 project__gallery-item" onClick={this.handlePortfolioClick.bind(this, 7)}>
+
+                <div className="mb-2 project__gallery-item" role="presentation" onClick={this.handlePortfolioClick.bind(this, 7)} onKeyDown={this.handlePortfolioClick.bind(this, 7)}  >
                   <img className="img-fluid" src={this.src8} alt={this.alt8} />
                 </div>
               }

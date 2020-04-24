@@ -1,8 +1,8 @@
-import React from 'React'
+import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-import ContactForm from '../components/contactForm/ContactForm';
+import ContactForm from '../components/contactForm/contactForm';
 
 
 

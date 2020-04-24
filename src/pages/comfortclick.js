@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import logo3 from "../images/partners/ComfortClick-Logo_sm.png"
+import Logo3 from "../images/partners/ComfortClick-Logo_sm.png"
 import Pdf from "../pdf/comfortclick/comfortclick.pdf"
 
 
@@ -39,11 +39,11 @@ const Comfortclick = () => {
                             <div className="partner__text_holder-right font-weight-light">
                             <div className="custom-card m-3 text-center">
                                 <a href="https://www.comfortclick.com/">
-                                    <img className="img-fluid" src={logo3} alt="partnersLogo" />
+                                    <img className="img-fluid" src={Logo3} alt="partnersLogo" />
                                 </a>
                             </div>
                             <i className="fas fa-2x fa-download p-2"></i>
-                            <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank">Comfortclick.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank" rel="noopener noreferrer">Comfortclick.pdf</a>
                         </div>
                     </div>
                     </div>

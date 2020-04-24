@@ -2,10 +2,10 @@ import React from 'react'
 import SEO from '../components/seo'
 import { Link } from 'gatsby'
 import Layout from "../components/layout"
-import logo1 from "../images/partners/jung.png"
-import logo4 from "../images/partners/Thinknx.png"
-import logo3 from "../images/partners/ComfortClick-Logo_sm.png"
-import logo2 from "../images/partners/wago1.png"
+import Logo1 from "../images/partners/jung.png"
+import Logo4 from "../images/partners/Thinknx.png"
+import Logo3 from "../images/partners/ComfortClick-Logo_sm.png"
+import Logo2 from "../images/partners/wago1.png"
 
 
 
@@ -43,7 +43,7 @@ const Partneri = () => {
                                 <div className="partners__custom-card col-lg-4 col-md-6 text-center">
                                     <Link to="/jung">
                                         <div className="p-3">
-                                            <img className="img-fluid" src={logo1} alt="JungLogo" />
+                                            <img className="img-fluid" src={Logo1} alt="JungLogo" />
 
 
                                         </div>
@@ -52,7 +52,7 @@ const Partneri = () => {
                                 <div className="partners__custom-card col-lg-4 col-md-6 text-center">
                                     <Link to="/wago">
                                         <div className="p-3">
-                                            <img className="img-fluid" src={logo2} alt="WagoLogo" />
+                                            <img className="img-fluid" src={Logo2} alt="WagoLogo" />
 
 
                                         </div>
@@ -61,7 +61,7 @@ const Partneri = () => {
                                 <div className="partners__custom-card col-lg-4 col-md-6 text-center">
                                     <Link to="/comfortclick">
                                         <div className="p-3">
-                                            <img className="img-fluid" src={logo3} alt="partnersLogo" />
+                                            <img className="img-fluid" src={Logo3} alt="partnersLogo" />
 
 
                                         </div>
@@ -70,7 +70,7 @@ const Partneri = () => {
                                 <div className="partners__custom-card col-lg-4 col-md-6 text-center">
                                     <Link to="/thinknx">
                                         <div className="p-3">
-                                            <img className="img-fluid" src={logo4} alt="partnersLogo" />
+                                            <img className="img-fluid" src={Logo4} alt="partnersLogo" />
 
 
                                         </div>

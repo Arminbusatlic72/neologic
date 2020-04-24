@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
-import gif from '../images/wrapper-img.gif'
+import Gif from '../images/wrapper-img.gif'
 
 
 
@@ -69,7 +69,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
               </div>
               <div className="col-lg-6 text-left">
 
-                <img className="img-fluid" src={gif} />
+                <img className="img-fluid" alt="neologic-rocket" src={Gif} />
 
 
               </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import logo4 from "../images/partners/Thinknx.png"
+import Logo4 from "../images/partners/Thinknx.png"
 import Pdf from "../pdf/thinknx/thinknx.pdf"
 
 
@@ -46,14 +46,14 @@ const Thinks = () => {
                             <div className="custom-card m-3 text-center">
                                 <a href="https://www.thinknx.com">
 
-                                    <img className="img-fluid" src={logo4} alt="partnersLogo" />
+                                    <img className="img-fluid" src={Logo4} alt="partnersLogo" />
 
 
 
                                 </a>
                             </div>
                             <i className="fas fa-2x fa-download p-2"></i>
-                            <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank">Thinknx.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank" rel="noopener noreferrer">Thinknx.pdf</a>
                             
                             </div>
                         </div>
