@@ -9,7 +9,7 @@ import Pdf from "../pdf/thinknx/thinknx.pdf"
 import sal from 'sal.js'
 
 
-const Thinks = () => {
+const Thinknx = () => {
     sal()
     return (
         <Layout>
@@ -23,7 +23,7 @@ const Thinks = () => {
                                     data-sal-delay="200"
                                     data-sal-duration="500"
                                     data-sal-easing="ease-out-bounce"><span className="text-black font-weight-light">Neologic</span> partner</h2>
-                                <i class="fas fa-4x fa-handshake"></i>
+                                <i className="fas fa-4x fa-handshake"></i>
                             </div>
                             <div className="p-4 mt-5 partner__text_holder">
                                 <p className="text-left font-weight-light"
@@ -66,4 +66,4 @@ const Thinks = () => {
 
     )
 }
-export default Thinks
+export default Thinknx

@@ -73,7 +73,7 @@ query($slug: String!) {
 }
 
 `
-class Project extends React.Component {
+class Projekat extends React.Component {
 
   constructor(props) {
     super(props)
@@ -236,4 +236,4 @@ class Project extends React.Component {
   }
 }
 
-export default Project;
+export default Projekat;
