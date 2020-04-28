@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Logo3 from "../images/partners/ComfortClick-Logo_sm.png"
-import Pdf from "../pdf/comfortclick/comfortclick.pdf"
+import Logo3 from "../images/partners/Comfortclick-logoSm.png"
+import Pdf from "../pdf/comfortclick/Comfortclick.pdf"
 
 
 import sal from 'sal.js'
@@ -12,7 +12,7 @@ const Comfortclick = () => {
     sal()
     return (
         <Layout>
-            <SEO title="Jung" />
+            <SEO title="Comfortclick" />
             <section className="page-section partner">
                 <div className="container">
                     <div className="row">

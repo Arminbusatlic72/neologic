@@ -20,7 +20,7 @@ const Wago = () => {
     sal()
     return (
         <Layout>
-            <SEO title="Jung" />
+            <SEO title="Wago" />
             <section className="page-section partner">
                 <div className="container">
                     <div className="row">

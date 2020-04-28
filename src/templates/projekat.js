@@ -155,9 +155,9 @@ class Projekat extends React.Component {
 
           <div className="container h-100">
 
-            <div className="row h-100 align-items-center justify-content-center text-center">
-              <div className="col-lg-10 align-self-end">
-                <h2 className="fade-in text-white font-weight-bold mb-5">{project.title}</h2>
+            <div className="row h-100 align-items-center align-items-md-right justify-content-center justify-content-md-right text-center text-md-right ">
+              <div className="col-lg-12 align-self-end">
+                <h2 className="fade-in text-white font-weight-bold mb-5 mb-md-1">{project.title}</h2>
 
               </div>
 

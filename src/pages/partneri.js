@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout"
 import Logo1 from "../images/partners/jung.png"
 import Logo4 from "../images/partners/Thinknx.png"
-import Logo3 from "../images/partners/ComfortClick-Logo_sm.png"
+import Logo3 from "../images/partners/Comfortclick-logoSm.png"
 import Logo2 from "../images/partners/wago1.png"
 
 
@@ -14,7 +14,7 @@ const Partneri = () => {
     return (
         <Layout>
             <SEO title="Partneri" />
-            <header className="partners__bcg">
+            {/* <header className="partners__bcg">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center justify-content-center text-center">
                         <div className="col-lg-10 align-self-end">
@@ -23,7 +23,7 @@ const Partneri = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> */}
             <section className="page-section partners">
                 <div className="container-fluid">
                     <div className="row min-vh-100">
@@ -82,7 +82,7 @@ const Partneri = () => {
 
 
                 </div>
-                <div className="partners__bcg">
+                {/* <div className="partners__bcg">
                     <div className="container h-100">
                         <div className="row h-100 align-items-center justify-content-center text-center">
                             <div className="col-lg-10 align-self-end">
@@ -90,7 +90,7 @@ const Partneri = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </section >
         </Layout >

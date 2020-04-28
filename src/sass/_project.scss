@@ -7,6 +7,9 @@
     position: relative;
     h2 {
         font-size: 3rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 7rem;
+          }
     }
 }
 .header__bcg {

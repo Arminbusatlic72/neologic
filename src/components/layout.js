@@ -64,7 +64,7 @@ export default class Layout extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-6 text-left">
-                <div className="small text-left text-muted">Copyright &copy; 2020 Neologic.rs. Allrights reserved</div>
+                <div className="small text-left text-muted">Copyright &copy; 2020 Neologic.rs. All rights reserved</div>
 
               </div>
               <div className="col-6 text-right">

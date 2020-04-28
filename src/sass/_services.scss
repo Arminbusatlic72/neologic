@@ -18,6 +18,9 @@
     height: 50vh;
     h2 {
         font-size: 3rem;
+        @media only screen and (min-width: 768px) {
+          font-size: 7rem;
+        }
     }
     
 }
@@ -40,7 +43,7 @@
     }
 }
 .public__background_img {
-    background-image: url('../images/condominium-690086_1280.jpg'),linear-gradient(to bottom, #{fade-out($brown, 1)} 0%,#{fade-out($brown, 1)} 100%);
+    background-image: url('../images/public-buildings.jpg'),linear-gradient(to bottom, #{fade-out($brown, 1)} 0%,#{fade-out($brown, 1)} 100%);
     background-size: cover;
     background-position: cover no-repeat;
     height: 450px;
@@ -77,8 +80,7 @@
     @media only screen and (max-width: 600px) {
       height: auto;
       padding: 2rem;
-      z-index: 2;
-    
+      z-index: 2;   
     }
 
 @media only screen and (min-width: 768px) {

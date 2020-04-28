@@ -65,7 +65,7 @@ export default class IndexPage extends React.Component {
 
 Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vodećim kompanijama nudimo vrhunske proizvode i servise za sve sisteme, bilo da je u pitanju automatizacija rezidencijalnog objekta ili kompleksan sistem centralnog nadzora i upravljanja.</p>
                 <a className="custom-button__black text-center text-md-left mb-5 js-scroll-trigger" href="#services"
-                  onClick={Scroller.handleAnchorScroll}>Saznajte više!</a>
+                  onClick={Scroller.handleAnchorScroll}>Saznajte više</a>
               </div>
               <div className="col-lg-6 text-left">
 
@@ -183,7 +183,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
                     <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid} />
                     <div className="projects__overlay text-black">
                       <div className="project__heading-wrapp text-left">
-                        <h3>Gir apartmani</h3>
+                        <h3>Gir apartman</h3>
                         <p>Beograd</p>
                         <p>2018</p>
                       </div>
@@ -216,7 +216,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
         <section className="page-section bg-dark text-white">
           <div className="container text-center">
             <h2 className="mb-5 font-weight-bold">Pogledajte sve naše projekte</h2>
-            <Link className="custom-button" to="/projekti">Saznaj više</Link>
+            <Link className="custom-button" to="/projekti">Saznajte više</Link>
           </div>
         </section>
 

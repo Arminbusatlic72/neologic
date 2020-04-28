@@ -19,9 +19,9 @@ const CategoryPage = (props) => {
       <SEO title="/Category" />
       <header className="projects__bcg">
         <div className="container h-100">
-          <div className="row h-100 align-items-center justify-content-center text-center">
-            <div className="col-lg-10 align-self-end">
-              <h2 className="fade-in text-white font-weight-bold mb-5">{props.data.wpgraphql.category.name}</h2>
+          <div className="row h-100 align-items-center align-items-md-right justify-content-center justify-content-md-right text-center text-md-right">
+            <div className="col-lg-12 align-self-end">
+              <h2 className="fade-in text-white font-weight-bold mb-5 mb-md-1">{props.data.wpgraphql.category.name}</h2>
 
             </div>
 

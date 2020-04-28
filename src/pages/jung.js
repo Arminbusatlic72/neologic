@@ -50,7 +50,7 @@ Portfolio kompanije JUNG sastoji se od komponenti za klasične elektro instalaci
                                 <a className="pdf-tag custom-card  p-2" href={Pdf1} target="_blank" rel="noopener noreferrer">JUNG Smart Home.pdf</a>
                                 <a className="pdf-tag custom-card  p-2" href={Pdf2} target="_blank" rel="noopener noreferrer">JUNG Hospitality.pdf</a>
                                 <a className="pdf-tag custom-card  p-2" href={Pdf3} target="_blank" rel="noopener noreferrer">JUNG Healthcare.pdf</a>
-                                <a className="pdf-tag custom-card p-2" href={Pdf4} target="_blank" rel="noopener noreferrer">JUNG Le Corbusier</a>
+                                <a className="pdf-tag custom-card p-2" href={Pdf4} target="_blank" rel="noopener noreferrer">JUNG Le Corbusier.pdf</a>
                                 <a className="pdf-tag custom-card p-2" href={Pdf5} target="_blank" rel="noopener noreferrer">JUNG LS1912.pdf</a>
                             </div>
                         </div>
