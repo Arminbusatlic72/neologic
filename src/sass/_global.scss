@@ -47,7 +47,14 @@ hr.light {
 
 
 }
-
+// navbar moile-icons
+.navbar-light .navbar-toggler {
+	border-color:transparent!important;
+}
+.navbar-toggler {
+    
+    font-size: 1.7rem!important;
+}
 // Page section padding
 .page-section {
 	padding: 4rem 0 8rem;

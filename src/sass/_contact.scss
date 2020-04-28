@@ -29,8 +29,11 @@
     }
 }
 .contact__heading {
-
+    font-size: 3rem;
+    @media only screen and (min-width: 768px) {
     font-size: 4rem;
+
+    }
 }
 .contact__holder {
     padding:2rem

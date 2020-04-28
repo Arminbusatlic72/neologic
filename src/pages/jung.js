@@ -21,7 +21,7 @@ const Jung = () => {
                     <div className="row">
                         <div className="col-12 col-md-9">
                             <div className="text-center text-md-left">
-                                <h2 className="text-white text-light font-weight-bold" data-sal="slide-up"
+                                <h2 className="text-white text-light font-weight-bold contact__heading" data-sal="slide-up"
                                     data-sal-delay="200"
                                     data-sal-duration="500"
                                     data-sal-easing="ease-out-bounce"><span className="text-black font-weight-lite">Neologic</span> partner</h2>

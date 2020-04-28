@@ -87,7 +87,8 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
                     <div className="row">
 
                         <div className="col-md-6 order-1 d-flex justify-content-center align-items-center text-white public__background_img">
-                            <h2 className="font-weight-bold" data-sal="slide-up"
+                            <h2 className="font-weight-bold" 
+                                data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Javni objekti</h2>
@@ -95,7 +96,8 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
                         </div>
                         <div className="col-md-6 order-2 d-flex background_text">
-                            <p className="m-auto text-left font-weight-light" data-sal="slide-down"
+                            <p className="m-auto text-left font-weight-light" 
+                                data-sal="slide-down"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Današnji zahtevi po pitanju zaštite životne sredine imaju veliki uticaj na javne zgrade. U javnim zgradama radno vreme je znatno duže, zdravstveni i bezbednosni propisi su znatno strožiji, a potrošnja energije je veoma značajna kako sa aspekta zaštite životne sredine, tako i sa finansijskog aspekta.
@@ -108,7 +110,8 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
                         </div>
                         <div className="col-md-6 d-flex order-4 order-md-3 background_text">
-                            <p className=" text-left m-auto font-weight-light" data-sal="slide-up"
+                            <p className=" text-left m-auto font-weight-light" 
+                                data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Bilo da su u pitanju muzeji, biblioteke, aerodromi, šoping molovi ili drugi javni objekti centralni sistem omogućava idealnu temperaturu u svakoj pojedinačnoj prostoriji prema nameni. Rasveta i žaluzine takođe rade zajedno – roletne se u odnosu na spoljašnje parametre spuštaju kako bi zaštitile prostoriju od pregrevanja ili se podižu kako bi omogućile ulazak sunčevih zraka i smanjile potrebu za grejanjem. Rasveta se dimuje u zavisnosti od osvetljaja i položaja žaluzina, a prisustvo ljudi se detektuje kako bi se prilagodio osvetljaj i klima u prostoriji.
@@ -124,14 +127,16 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
 
                         <div className="col-md-6 order-5 d-flex justify-content-center align-items-center text-white commercial__background_img">
-                            <h2 className="font-weight-bold" data-sal="slide-down"
+                            <h2 className="font-weight-bold" 
+                                data-sal="slide-down"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Komercijalni Objekti</h2>
 
                         </div>
                         <div className="col-md-6 order-6 d-flex background_text">
-                            <p className="m-auto text-left font-weight-light" data-sal="slide-up"
+                            <p className="m-auto text-left font-weight-light" 
+                                data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Iako savremeni dizajn modernih komercijalnih zgrada znatno povećava njihovu energetsku efikasnost, postoje limiti koji se mogu postići koristeći isključivo tehnike dizajna i savremene materijale. Takođe, fragmentisan pristup sistemima u zgradi gde se svaki sistem posmatra kao zasebna celina predstavlja još jednu prepreku u dostizanju maksimalne energetske efikasnosti objekta.
@@ -143,7 +148,8 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
                         </div>
                         <div className="col-md-6 order-8 order-md-7 d-flex background_text">
-                            <p className="m-auto text-left font-weight-light" data-sal="slide-down"
+                            <p className="m-auto text-left font-weight-light" 
+                                data-sal="slide-down"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Sistem upravljanja omogućava optimalan nivo radnog svetla pritom maksimalno koristeći dnevno svetlo, pozicioniranje žaluzina u odnosu na položaj sunca kako bi se sprečio odsjaj i iskoristila/blokirala sunčeva svetlost u slučaju potrebe za grejanjem/hlađenjem objekta. Detektori prisustva i vremenski programi obezbeđuju da se prostorije greju, hlade i ventiliraju na maksimalan nivo samo kada ima osoba u prostoriji. Kada je otvoren prozor, grejanje ili hlađenje se automatski gasi kako bi se sprečili nepotrebni gubici energije.
@@ -161,14 +167,16 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
 
                         <div className="col-md-6  order-9 d-flex justify-content-center align-items-center text-white residential__background_img">
-                            <h2 className="font-weight-bold text-white" data-sal="slide-up"
+                            <h2 className="font-weight-bold text-white" 
+                                data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Rezidencialni objekti</h2>
 
                         </div>
                         <div className="col-md-6 order-10 d-flex background_text">
-                            <p className="m-auto text-left font-weight-light" data-sal="slide-down"
+                            <p className="m-auto text-left font-weight-light" 
+                                data-sal="slide-down"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Inteligentni bus sistemi se više ne vezuju samo za luksuzno stanovanje. Zahvaljujući mogućnostima koje pružaju kao što su ušteda energije, povećanje sigurnosti i unapređenje životnog prostora bus sistemi postaju jedinstveni deo modernog stanovanja.
@@ -178,7 +186,8 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
 
                         </div>
                         <div className="col-md-6  order-12 order-md-11 background_text">
-                            <p className="my-5 text-left font-weight-light" data-sal="slide-up"
+                            <p className="my-5 text-left font-weight-light" 
+                                data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
                                 data-sal-easing="ease-out-bounce">Zahvaljujući velikom broju proizvođača i kvalifikovanih sistem integratora širom sveta KNX standard je potpuno nezavistan od pojedinačnih proizvođača, čime predstavlja sigurnu investiciju u budućnost. Širok spektar proizvoda koji su u potpunosti kompatibilni među sobom pruža integratorima veliku fleksibilnost u kreiranju idealnog sistema upravljanja.
