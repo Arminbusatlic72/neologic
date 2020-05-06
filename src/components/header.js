@@ -1,8 +1,7 @@
 import React from "react"
 import { Navbar } from "react-bootstrap"
 import Scroller from "../components/scroller"
-
-import logo from '../images/logo.png';
+import Logo from "../assets/Neologic_logo.svg"
 import { Link } from 'gatsby'
 
 
@@ -23,7 +22,7 @@ export default class Header extends React.Component {
           collapseOnSelect={true}>
           <div className="container">
             <Link className="navbar-brand" to="/">
-              <img src={logo} alt="neologic.logo" />
+              <Logo />
             </ Link>
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive">

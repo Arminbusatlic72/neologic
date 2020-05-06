@@ -30,7 +30,7 @@ const ContactForm = () => {
                 <div className="form-group my-3">
 
                     <label>Email
-                    <input className="form-control" type="email" name="user_email" placeholder="Vaše email" required />
+                    <input className="form-control" type="email" name="user_email" placeholder="Vaš email" required />
                     </label>
                 </div>
                 <div className="form-group my-3">
