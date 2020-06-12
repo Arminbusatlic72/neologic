@@ -131,7 +131,7 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
                                 data-sal="slide-down"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
-                                data-sal-easing="ease-out-bounce">Komercijalni Objekti</h2>
+                                data-sal-easing="ease-out-bounce">Komercijalni objekti</h2>
 
                         </div>
                         <div className="col-md-6 order-6 d-flex background_text">
@@ -171,7 +171,7 @@ kako bi se uspešno odgovorilo na sve zahteve klijenta.</p>
                                 data-sal="slide-up"
                                 data-sal-delay="100"
                                 data-sal-duration="500"
-                                data-sal-easing="ease-out-bounce">Rezidencialni objekti</h2>
+                                data-sal-easing="ease-out-bounce">Rezidencijalni objekti</h2>
 
                         </div>
                         <div className="col-md-6 order-10 d-flex background_text">
