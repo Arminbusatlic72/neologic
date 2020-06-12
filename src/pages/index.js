@@ -183,7 +183,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
                     <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid} />
                     <div className="projects__overlay text-black">
                       <div className="project__heading-wrapp text-left">
-                        <h3>Gir apartman</h3>
+                        <h3>GIR apartman</h3>
                         <p>Beograd</p>
                         <p>2018</p>
                       </div>

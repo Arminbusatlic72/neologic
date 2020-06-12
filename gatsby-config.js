@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: `/gatsby-creative`,
   siteMetadata: {
-    title: `neologic`,
-    description: `Neologic Company official website made with Gatsby.JS and WP as headless CMS`,
+    title: `Neologic companz official website`,
+    description: `Planiranje, projektovanje i programiranje kućne automatike i BMS sistema`,
     author: `Armin Busatlic`,
   },
   plugins: [
@@ -54,7 +54,7 @@ module.exports = {
       options: {
         google: {
           // families: ['Merriweather:400,300,300italic,400italic,700,700italic', 'Merriweather+Sans:400,700']
-          families: ['Heebo', "sans - serif"]
+          families: ['Inter:300;400;800']
 
         }
       }

@@ -62,7 +62,7 @@ export default class Layout extends React.Component {
         <main>{this.props.children}</main>
         <footer className="bg-light py-5">
           <div className="container">
-            <div className="row">
+            <div className="row d-flex align-items-center">
               <div className="col-6 text-left">
                 <div className="small text-left text-muted">Copyright &copy; 2020 Neologic.rs. All rights reserved</div>
 
