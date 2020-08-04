@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/gatsby-creative`,
   siteMetadata: {
-    title: `Neologic companz official website`,
+    title: `Neologic company official website`,
     description: `Planiranje, projektovanje i programiranje kućne automatike i BMS sistema`,
     author: `Armin Busatlic`,
   },
