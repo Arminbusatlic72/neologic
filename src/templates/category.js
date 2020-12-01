@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
@@ -37,8 +35,8 @@ const CategoryPage = (props) => {
           <div className="row flex-row">
             {props.data.wpgraphql.category.projects.edges.map((edge) => {
 
-              const src = edge.node.featuredImage.sourceUrl
-              const alt = edge.node.featuredImage.altText
+              const src = edge.node.featuredImage.node.sourceUrl
+              const alt = edge.node.featuredImage.node.altText
 
 
 
@@ -90,8 +88,11 @@ query GET_CATEGORY($id: ID!) {
             slug
             projectId
             featuredImage {
-              altText
-              sourceUrl
+              node {
+                altText
+                sourceUrl
+              }
+              
             }
             ProjectDetails {
               godina

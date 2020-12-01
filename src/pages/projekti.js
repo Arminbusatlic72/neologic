@@ -14,12 +14,13 @@ const Projects = () => {
     projects {
       edges {
         node {
+          title(format: RENDERED)
+          slug
           ProjectDetails {
             godina
             lokacija
           }
-          title(format: RENDERED)
-          slug
+          
           categories {
             edges {
               node {
@@ -31,8 +32,11 @@ const Projects = () => {
           id
           date
           featuredImage {
-            altText
-            sourceUrl
+            node {
+              altText
+              sourceUrl
+            }
+            
           }
         }
       }
@@ -68,8 +72,8 @@ const Projects = () => {
             {data.wpgraphql.projects.edges.map((edge) => {
 
 
-              const src = (edge.node.featuredImage) ? edge.node.featuredImage.sourceUrl : null
-              const alt = (edge.node.featuredImage) ? edge.node.featuredImage.altText : null
+              const src = (edge.node.featuredImage) ? edge.node.featuredImage.node.sourceUrl : null
+              const alt = (edge.node.featuredImage) ? edge.node.featuredImage.node.altText : null
 
 
               return (

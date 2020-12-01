@@ -14,6 +14,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 edges {
                     node {
                         slug
+                       
                     }
                 }
             }
@@ -23,6 +24,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                   id
                   name
                   slug
+                  uri
                 }
               }
             }
@@ -33,7 +35,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.wpgraphql.projects.edges.forEach((edge) => {
     createPage({
       component: projectTemplate,
-      path: `/${edge.node.slug}`,
+      path: `/projekti/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },

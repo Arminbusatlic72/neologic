@@ -70,7 +70,8 @@ export default class Layout extends React.Component {
               <div className="col-6 text-right">
                 <ul className="social-media__list">
 
-                  <li className="p-2 social-media__list-item"><a href="https://www.instagram.com/neologic_rs/"><i className="fab fa-2x fa-instagram-square text-muted"></i></a></li>
+                  <li className="p-2 social-media__list-item"><a href="https://www.instagram.com/neologic_rs/"><i role="button"
+                    aria-label="Link" className="fab fa-2x fa-instagram-square text-muted"></i></a></li>
                 </ul>
               </div>
 

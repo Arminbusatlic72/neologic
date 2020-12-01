@@ -62,9 +62,11 @@ query($slug: String!) {
     }
     title
     featuredImage {
-      sizes(size: POST_THUMBNAIL)
-      altText
-      sourceUrl
+      node {
+        altText
+        sourceUrl
+      }
+      
     }
     
   }
@@ -86,8 +88,8 @@ class Projekat extends React.Component {
 
     this.handlePortfolioClick = this.handlePortfolioClick.bind(this);
     this.setModal = this.setModal.bind(this);
-    this.src = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.sourceUrl : null
-    this.alt = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.altText : null
+    this.src = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.node.sourceUrl : null
+    this.alt = (this.props.data.wpgraphql.projectBy.featuredImage) ? this.props.data.wpgraphql.projectBy.featuredImage.node.altText : null
     const projectDetails = this.props.data.wpgraphql.projectBy.ProjectDetails;
 
     this.src1 = (projectDetails.image) ? projectDetails.image.sourceUrl : null
