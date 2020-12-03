@@ -4,8 +4,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 export const CategoriesList = () => {
   const categoriesForFilter = useStaticQuery(graphql`
 query {
-  wpgraphql {
-    categories {
+  
+  allWpCategory {
       edges {
         node {
           name
@@ -14,13 +14,13 @@ query {
         }
       }
     }
-  }
+  
     }
 `)
 
 
 
-  const edges = categoriesForFilter.wpgraphql.categories.edges
+  const edges = categoriesForFilter.allWpCategory.edges
 
 
 

@@ -227,7 +227,7 @@ Zahvaljujući iskustvu, stečenom kroz veliki broj projekata i partnerstvu sa vo
               <div className="col-lg-8 text-center">
                 <h2 className="mb-5 font-weight-bold">Kontaktirajte nas!</h2>
 
-                {/* <p className="text-muted mb-5">Da li ste spremni da započnemo Vaš sledeći projekat zajedno? Pozovite nas ili pošaljite email, odgovorićemo Vam u najkraćem mogučem periodu!</p> */}
+                
               </div>
             </div>
             <div className="row">

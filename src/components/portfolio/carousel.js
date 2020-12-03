@@ -18,6 +18,7 @@ const PortfolioCarousel = ({ images, current }) => {
       </figure>
     </Carousel.Item>
   );
+  console.log("images - ", images)
 
   return (
     <Carousel interval={null} indicators={false} defaultActiveIndex={current} slide={false}>

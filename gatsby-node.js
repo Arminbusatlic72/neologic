@@ -1,4 +1,3 @@
-
 const path = require("path")
 
 
@@ -9,8 +8,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   const res = await graphql(`
     query {
-        wpgraphql {
-            projects {
+        
+      allWpProject {
                 edges {
                     node {
                         slug
@@ -18,36 +17,33 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
-            categories {
+            allWpCategory {
               edges {
                 node {
-                  id
-                  name
                   slug
-                  uri
                 }
               }
             }
-        }
+        
     }
     `)
 
-  res.data.wpgraphql.projects.edges.forEach((edge) => {
+  res.data.allWpProject.edges.forEach((edge) => {
     createPage({
       component: projectTemplate,
-      path: `/projekti/${edge.node.slug}`,
+      path: `/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },
     })
   })
 
-  res.data.wpgraphql.categories.edges.forEach((edge) => {
+  res.data.allWpCategory.edges.forEach((edge) => {
     createPage({
       component: categoryTemplate,
       path: `/kategorija/${edge.node.slug}`,
       context: {
-        id: edge.node.id,
+        slug: edge.node.slug,
       },
     })
   })

@@ -60,26 +60,54 @@ module.exports = {
       }
     },
 
+    // {
+    //   resolve: "gatsby-source-graphql",
+    //   options: {
+    //     // Arbitrary name for the remote schema Query type
+    //     typeName: "WpGraphql",
+    //     // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+    //     fieldName: "wpgraphql",
+    //     // Url to query from
+    //     url: "http://blog.neologic.rs/graphql",
+    //     includedRoutes: [
+    //       "**/categories",
+    //       "**/posts",
+    //       "**/pages",
+    //       "**/projects",
+    //       "**/form submissions",
+    //       "**/media",
+    //       "**/tags",
+    //       "**/taxonomies",
+    //       "**/users",
+    //     ]
+    //   },
+    // },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-source-wordpress-experimental`,
       options: {
-        // Arbitrary name for the remote schema Query type
-        typeName: "WpGraphql",
-        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "wpgraphql",
-        // Url to query from
-        url: "http://blog.neologic.rs/graphql",
-        includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/pages",
-          "**/projects",
-          "**/form submissions",
-          "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",
-        ]
+        url:
+          process.env.WPGRAPHQL_URL ||
+          `http://blog.neologic.rs/graphql
+          `,
+        verbose: true,
+        develop: {
+          hardCacheMediaFiles: true,
+        },
+        debug: {
+          graphql: {
+            writeQueriesToDisk: true,
+          },
+        },
+        type: {
+          Post: {
+            limit:
+              process.env.NODE_ENV === `development`
+                ? // Lets just pull 50 posts in development to make it easy on ourselves.
+                  50
+                : // and we don't actually need more than 5000 in production for this particular site
+                  5000,
+          },
+        },
       },
     },
     {
