@@ -51,7 +51,7 @@ const Projects = () => {
 
   return (
     <Layout>
-      <SEO title="/Projekti" />
+      <SEO title="Projekti" />
       <header className="projects__bcg">
         <div className="container h-100">
           <div className="row h-100 align-items-center align-items-md-right justify-content-center justify-content-md-right text-center text-md-right">

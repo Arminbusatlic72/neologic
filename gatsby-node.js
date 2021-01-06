@@ -41,7 +41,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allWpCategory.edges.forEach((edge) => {
     createPage({
       component: categoryTemplate,
-      path: `/kategorija/${edge.node.slug}`,
+      path: `/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },

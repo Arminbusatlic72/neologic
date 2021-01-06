@@ -1,34 +1,49 @@
 // Styling for the masthead
 header.masthead {
-	padding-top: 10rem;
-	padding-bottom: calc(10rem - #{$navbar-height});
-	// replace the masthead.jpg image in the /img directory to change the image
-	// if the image name change, make sure to update the url path below!
-	background: linear-gradient(to left, #{fade-out(#8b86a3, .2)} 0%,#{fade-out(#322e40, .2)} 100%), url('../images/slider-bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	
-	h1 {
-		font-size: 2.25rem;
-	}
-	@include media-breakpoint-up(lg) {
-		height: 100vh;
-		min-height: 40rem;
-		padding-top: $navbar-height;
-		padding-bottom: 0;
-		p {
-			font-size: 1.15rem;
-		}
-		h1 {
-			font-size: 3rem;
-		}
-	}
-	@include media-breakpoint-up(xl) {
-		h1 {
-			font-size: 3.5rem;
-		}
-	}
-	
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background: linear-gradient(
+    to left,
+    #{fade-out(#8b86a3, 0.2)} 0%,
+    #{fade-out(#322e40, 0.2)} 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+.masthead-header__bcg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
 }

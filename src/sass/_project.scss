@@ -25,6 +25,18 @@
   z-index: -1;
   object-fit: cover;
 }
+
+.project-container {
+  position: absolute;
+  top: 0;
+  @media only screen and (min-width: 992px) {
+    right: 5%;
+    left: 5%;
+  }
+
+  // width: 100%;
+}
+
 .project__list-item {
   border-bottom: 1px solid #eee;
   width: 100%;

@@ -8,6 +8,7 @@ import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
 import Gif from '../images/wrapper-img.gif'
+import Masthead from '../components/masthead'
 
 
 
@@ -39,20 +40,10 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <header className="masthead">
-          <div className="container h-100">
-            <div className="row h-100 align-items-center justify-content-center text-center">
-              <div className="col-lg-10 align-self-end">
-                <h1 className="fade-in text-uppercase text-white font-weight-bold">Kompanija NEOLOGIC</h1>
-                {/* <hr className="divider my-4" /> */}
-              </div>
-              <div className="col-lg-8 align-self-baseline">
-                <p className="fade-in text-white-75 font-weight-light mb-5">Planiranje, projektovanje i programiranje kućne automatike i BMS sistema</p>
-                <a className="custom-button js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Saznajte više</a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Masthead>
+        <a className="custom-button js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Saznajte više</a>
+        </Masthead>
+        
 
         <section className="page-section" id="about">
           <div className="container">

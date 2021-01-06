@@ -192,18 +192,19 @@ class Projekat extends React.Component {
   render() {
     const project = this.props.data.wpProject
     
+    
     return (
 
       <Layout>
-        < SEO title="/project" />
+        < SEO title={project.title} />
         <header className="project__bcg">
           {this.src && this.alt != null &&
-            <Img className="header__bcg" fluid={this.src} alt={this.alt} />
+            <Img className="img-fluid header__bcg" fluid={this.src} alt={this.alt} />
             
           }
 
 
-          <div className="container h-100">
+          <div className="container h-100 project-container">
 
             <div className="row h-100 align-items-center align-items-md-right justify-content-center justify-content-md-right text-center text-md-right ">
               <div className="col-lg-12 align-self-end">
@@ -213,6 +214,7 @@ class Projekat extends React.Component {
 
             </div>
           </div>
+          
         </header>
         <section className="project page-section">
           <div className="container">

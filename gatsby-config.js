@@ -4,10 +4,54 @@ module.exports = {
     title: `Neologic company official website`,
     description: `Planiranje, projektovanje i programiranje kućne automatike i BMS sistema`,
     author: `Armin Busatlic`,
+    siteUrl: `https://neologic.rs/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+        exclude: [`/search*`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+  
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+        }`,
+        resolveSiteUrl: ({site, allSitePage}) => {
+          //Alternatively, you may also pass in an environment variable (or any location) at the beginning of your `gatsby-config.js`.
+          return site.siteMetadata.siteUrl
+        },
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            return {
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
+              changefreq: `daily`,
+              priority: 0.7,
+            }
+          })
+      }
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`, `/usluge/*`,`/projekti/`,`/partneri/`,`/usluge/`],
+      },
+    },
+  
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -59,29 +103,6 @@ module.exports = {
         }
       }
     },
-
-    // {
-    //   resolve: "gatsby-source-graphql",
-    //   options: {
-    //     // Arbitrary name for the remote schema Query type
-    //     typeName: "WpGraphql",
-    //     // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-    //     fieldName: "wpgraphql",
-    //     // Url to query from
-    //     url: "http://blog.neologic.rs/graphql",
-    //     includedRoutes: [
-    //       "**/categories",
-    //       "**/posts",
-    //       "**/pages",
-    //       "**/projects",
-    //       "**/form submissions",
-    //       "**/media",
-    //       "**/tags",
-    //       "**/taxonomies",
-    //       "**/users",
-    //     ]
-    //   },
-    // },
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
