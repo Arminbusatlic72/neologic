@@ -45,14 +45,7 @@ module.exports = {
           })
       }
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/index/`, `/usluge/*`,`/projekti/`,`/partneri/`,`/usluge/`],
-      },
-    },
-  
-
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

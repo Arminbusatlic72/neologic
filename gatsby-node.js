@@ -31,7 +31,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allWpProject.edges.forEach((edge) => {
     createPage({
       component: projectTemplate,
-      path: `/${edge.node.slug}`,
+      path: `//projekat/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },
@@ -41,7 +41,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allWpCategory.edges.forEach((edge) => {
     createPage({
       component: categoryTemplate,
-      path: `/${edge.node.slug}`,
+      path: `/kategorija/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },

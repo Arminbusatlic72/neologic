@@ -40,7 +40,7 @@ query {
         {
           edges.map((edge) => {
             return (
-              <Link to={`/${edge.node.slug}`} key={edge.node.id}>
+              <Link to={`/kategorija/${edge.node.slug}`} key={edge.node.id}>
                 <li className="btn btn-outline-primary p-3 m-1 text-black" key={edge.node.id}>
                   {edge.node.name}
                 </li>
