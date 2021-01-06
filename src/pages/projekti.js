@@ -80,7 +80,7 @@ const Projects = () => {
 
               return (
                 <div className="col-xs-12 col-md-6 mb-5" key={edge.node.id}>
-                  <Link to={`/${edge.node.slug}`} >
+                  <Link to={`/projekat/${edge.node.slug}`} >
 
                     <div className="projects__container" >
                       {src && alt != null &&
