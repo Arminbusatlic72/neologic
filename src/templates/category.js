@@ -40,7 +40,7 @@ function CategoryPage(props) {
 
               return (
                 <div className="col-xs-12 col-md-6 mb-3" key={node.id}>
-                  <Link to={`/${node.slug}`}>
+                  <Link to={`/projekat/${node.slug}`}>
                     <div className="projects__container">
                       <Img className="img-fluid" fluid={src} alt={alt} />
                       <div className="projects__overlay text-black">
