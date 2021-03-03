@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Logo2 from "../images/partners/wago1.png"
-import Pdf from "../pdf/wago/WAGO Building Automation.pdf"
-import Pdf1 from "../pdf/wago/WAGO Lighting Control.pdf"
-import Pdf2 from "../pdf/wago/WAGO Energy Management.pdf"
-import Pdf3 from "../pdf/wago/WAGO Measurement.pdf"
-import Pdf4 from "../pdf/wago/WAGO HVAC.pdf"
-import Pdf5 from "../pdf/wago/WAGO Connectors.pdf"
+import Pdf from "../pdf/2.WAGO/WAGO automatizacija zgrada.pdf"
+import Pdf1 from "../pdf/2.WAGO/WAGO upravljanja rasvetom.pdf"
+import Pdf2 from "../pdf/2.WAGO/WAGO upravljanje energijom.pdf"
+import Pdf3 from "../pdf/2.WAGO/WAGO KGH.pdf"
+import Pdf4 from "../pdf/2.WAGO/WAGO instalacioni konektori.pdf"
+
 
 
 
@@ -53,12 +53,12 @@ const Wago = () => {
                                 </a>
                             </div>
                             <i className="fas fa-2x fa-download p-2"></i>
-                            <a className="pdf-tag custom-card  p-2" href = {Pdf} target = "_blank" rel="noopener noreferrer">WAGO Building Automation.pdf</a>
-                            <a className="pdf-tag custom-card  p-2" href = {Pdf1} target = "_blank" rel="noopener noreferrer">WAGO Lighting Control.pdf</a>
-                            <a className="pdf-tag custom-card  p-2" href = {Pdf2} target = "_blank" rel="noopener noreferrer">WAGO Energy Management.pdf</a>
-                            <a className="pdf-tag custom-card  p-2" href = {Pdf3} target = "_blank" rel="noopener noreferrer">WAGO Measurement.pdf</a>
-                            <a className="pdf-tag custom-card p-2" href = {Pdf4} target = "_blank" rel="noopener noreferrer">WAGO HVAC.pdf</a>
-                            <a className="pdf-tag custom-card p-2" href = {Pdf5} target = "_blank" rel="noopener noreferrer">WAGO Connectors.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href = {Pdf} target = "_blank" rel="noopener noreferrer">WAGO automatizacija zgrada.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href = {Pdf1} target = "_blank" rel="noopener noreferrer">WAGO upravljanje rasvetom.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href = {Pdf2} target = "_blank" rel="noopener noreferrer">WAGO upravljanje energijom.pdf</a>
+                            <a className="pdf-tag custom-card  p-2" href = {Pdf3} target = "_blank" rel="noopener noreferrer">WAGO KGH.pdf</a>
+                            <a className="pdf-tag custom-card p-2" href = {Pdf4} target = "_blank" rel="noopener noreferrer">WAGO instalacioni konektori.pdf</a>
+                            
 
 
                            

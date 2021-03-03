@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Logo1 from "../images/partners/jung.png"
-import Pdf from "../pdf/jung/JUNG Switches.pdf"
-import Pdf1 from "../pdf/jung/JUNG Smart Home.pdf"
-import Pdf2 from "../pdf/jung/JUNG Hospitality.pdf"
-import Pdf3 from "../pdf/jung/JUNG Healthcare.pdf"
-import Pdf4 from "../pdf/jung/JUNG Le Corbusier.pdf"
-import Pdf5 from "../pdf/jung/JUNG LS1912.pdf"
+import Pdf from "../pdf/1. JUNG/JUNG galanterija.pdf"
+import Pdf1 from "../pdf/1. JUNG/JUNG KNX.pdf"
+import Pdf2 from "../pdf/1. JUNG/JUNG hotelski sistemi.pdf"
+import Pdf3 from "../pdf/1. JUNG/JUNG Le Corbusier.pdf"
+import Pdf4 from "../pdf/1. JUNG/JUNG mat galanterija.pdf"
+import Pdf5 from "../pdf/1. JUNG/JUNG Plug & Light.pdf"
 import sal from 'sal.js'
 
 
@@ -43,12 +43,12 @@ const Jung = () => {
                                     </a>
                                 </div>
                                 <i className="fas fa-2x fa-download p-2"></i>
-                                <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank" rel="noopener noreferrer">JUNG Switches.pdf</a>
-                                <a className="pdf-tag custom-card  p-2" href={Pdf1} target="_blank" rel="noopener noreferrer">JUNG Smart Home.pdf</a>
-                                <a className="pdf-tag custom-card  p-2" href={Pdf2} target="_blank" rel="noopener noreferrer">JUNG Hospitality.pdf</a>
-                                <a className="pdf-tag custom-card  p-2" href={Pdf3} target="_blank" rel="noopener noreferrer">JUNG Healthcare.pdf</a>
-                                <a className="pdf-tag custom-card p-2" href={Pdf4} target="_blank" rel="noopener noreferrer">JUNG Le Corbusier.pdf</a>
-                                <a className="pdf-tag custom-card p-2" href={Pdf5} target="_blank" rel="noopener noreferrer">JUNG LS1912.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf} target="_blank" rel="noopener noreferrer">JUNG galanterija.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf1} target="_blank" rel="noopener noreferrer">JUNG KNX.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf2} target="_blank" rel="noopener noreferrer">JUNG hotelski sistemi.pdf</a>
+                                <a className="pdf-tag custom-card  p-2" href={Pdf3} target="_blank" rel="noopener noreferrer">JUNG Le Corbusier.pdf</a>
+                                <a className="pdf-tag custom-card p-2" href={Pdf4} target="_blank" rel="noopener noreferrer">JUNG mat galanterija.pdf</a>
+                                <a className="pdf-tag custom-card p-2" href={Pdf5} target="_blank" rel="noopener noreferrer">JUNG Plug & Light.pdf</a>
                             </div>
                         </div>
                     </div>
