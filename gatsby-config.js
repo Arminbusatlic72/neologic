@@ -4,7 +4,7 @@ module.exports = {
     title: `Neologic company official website`,
     description: `Planiranje, projektovanje i programiranje kućne automatike i BMS sistema`,
     author: `Armin Busatlic`,
-    siteUrl: `https://neologic.rs/`
+    siteUrl: `https://neologic.rs/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,7 +31,7 @@ module.exports = {
               }
             }
         }`,
-        resolveSiteUrl: ({site, allSitePage}) => {
+        resolveSiteUrl: ({ site, allSitePage }) => {
           //Alternatively, you may also pass in an environment variable (or any location) at the beginning of your `gatsby-config.js`.
           return site.siteMetadata.siteUrl
         },
@@ -42,10 +42,10 @@ module.exports = {
               changefreq: `daily`,
               priority: 0.7,
             }
-          })
-      }
+          }),
+      },
     },
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,13 +63,13 @@ module.exports = {
         disable: false, // Flag for disabling animations
 
         // Advanced Options
-        selector: '[data-sal]', // Selector of the elements to be animated
-        animateClassName: 'sal-animate', // Class name which triggers animation
-        disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-        rootMargin: '0% 50%', // Corresponds to root's bounding box margin
-        enterEventName: 'sal:in', // Enter event name
-        exitEventName: 'sal:out', // Exit event name
-      }
+        selector: "[data-sal]", // Selector of the elements to be animated
+        animateClassName: "sal-animate", // Class name which triggers animation
+        disabledClassName: "sal-disabled", // Class name which defines the disabled state
+        rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+        enterEventName: "sal:in", // Enter event name
+        exitEventName: "sal:out", // Exit event name
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -85,16 +85,20 @@ module.exports = {
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sass`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
           // families: ['Merriweather:400,300,300italic,400italic,700,700italic', 'Merriweather+Sans:400,700']
-          families: ['Inter:300;400;800']
-
-        }
-      }
+          families: ["Inter:300;400;800"],
+        },
+      },
     },
     {
       resolve: `gatsby-source-wordpress`,
@@ -125,12 +129,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
-    }
+          include: /assets/,
+        },
+      },
+    },
   ],
 }
