@@ -1,5 +1,0 @@
-1. WAGO automatizacija zgrada
-2. WAGO upravljanje rasvetom
-3. WAGO upravljanje energijom
-4. WAGO KGH
-5. WAGO instalacioni konektori
