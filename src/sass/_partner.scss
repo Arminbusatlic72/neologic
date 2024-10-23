@@ -1,38 +1,85 @@
 .partner {
-    background: url('../images/partners/background1.jpg'),linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: cover no-repeat;
-    background-color:$primary;
-    background-attachment: fixed;
-    padding-top: 8rem;  
-    
+  background: url("../images/partners/background1.jpg"),
+    linear-gradient(
+      to bottom,
+      #{fade-out($brown, 0.2)} 0%,
+      #{fade-out($brown, 0.2)} 100%
+    );
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: cover no-repeat;
+  background-color: $primary;
+  background-attachment: fixed;
+  padding-top: 8rem;
 }
 .partner__text_holder {
-    background-color: rgba(251, 251, 251, 0.151);
-    padding: 1rem;
+  background-color: rgba(251, 251, 251, 0.151);
+  padding: 1rem;
 }
 .partner__text_holder-right {
-    background-color: rgba(251, 251, 251, 0.151);
-    padding: 1rem;
-    min-height: 100%;
-
+  background-color: rgba(251, 251, 251, 0.151);
+  padding: 1rem;
+  min-height: 100%;
 }
 .partner__logo_holder {
-    display: block;
-    
+  display: block;
 }
 .text-black {
-    color: black!important;
-    font-weight: 100;
+  color: black !important;
+  font-weight: 100;
 }
 .pdf-tag {
-    color: black;
-    display:block;
-
+  color: black;
+  display: block;
 }
 .pdf-tag:hover {
-    color: black;
+  color: black;
+  text-decoration: none;
+}
+
+// $white: #fff;
+$margin-top: 2rem;
+$transition-duration: 0.3s;
+
+.navigation-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: $margin-top;
+
+  .navigation-link {
     text-decoration: none;
-    
+    color: $white;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+
+      .arrow {
+        transform: translateX(5px); // Common hover effect for both links
+      }
+    }
+
+    &.previous-link:hover .arrow {
+      transform: translateX(-5px);
+    }
+
+    &.next-link:hover .arrow {
+      transform: translateX(5px);
+    }
+
+    .arrow {
+      margin-left: 0.5rem;
+      transition: transform $transition-duration ease;
+      font-weight: bold;
+    }
+  }
+
+  .empty-link {
+    flex-grow: 1;
+  }
 }

@@ -25,6 +25,7 @@ query PREVIEW_QUERY($id: ID!) {
         id
       }
     }
+    contentTypeName
     databaseId
     date
     dateGmt
@@ -41,8 +42,10 @@ query PREVIEW_QUERY($id: ID!) {
     featuredImageId
     guid
     id
+    isContentNode
     isRevision
     isSticky
+    isTermNode
     lastEditedBy {
       node {
         id

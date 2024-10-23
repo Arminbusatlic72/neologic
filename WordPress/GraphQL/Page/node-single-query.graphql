@@ -32,6 +32,7 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
         id
       }
     }
+    contentTypeName
     databaseId
     date
     dateGmt
@@ -47,10 +48,12 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     featuredImageId
     guid
     id
+    isContentNode
     isFrontPage
     isPostsPage
     isPrivacyPage
     isRevision
+    isTermNode
     lastEditedBy {
       node {
         id

@@ -21,6 +21,8 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       databaseId
       description
       id
+      isContentNode
+      isTermNode
       link
       name
       wpParent: parent {
@@ -46,6 +48,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           id
         }
       }
+      taxonomyName
       termGroupId
       termTaxonomyId
       uri

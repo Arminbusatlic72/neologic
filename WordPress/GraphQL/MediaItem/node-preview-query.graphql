@@ -33,6 +33,7 @@ query PREVIEW_QUERY($id: ID!) {
         id
       }
     }
+    contentTypeName
     databaseId
     date
     dateGmt
@@ -42,6 +43,8 @@ query PREVIEW_QUERY($id: ID!) {
     fileSize
     guid
     id
+    isContentNode
+    isTermNode
     lastEditedBy {
       node {
         id

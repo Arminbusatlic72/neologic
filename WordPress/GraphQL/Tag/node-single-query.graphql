@@ -10,6 +10,8 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     databaseId
     description
     id
+    isContentNode
+    isTermNode
     link
     name
     posts(first: 100) {
@@ -23,6 +25,7 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
         id
       }
     }
+    taxonomyName
     termGroupId
     termTaxonomyId
     uri

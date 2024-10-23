@@ -49,3 +49,11 @@
     filter: none;
   }
 }
+.img-wrapper-fluid {
+  width: 200px;
+  position: relative;
+  height: auto;
+  @include media-breakpoint-up(lg) {
+    width: 180px;
+  }
+}

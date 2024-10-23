@@ -6,6 +6,7 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
         id
       }
     }
+    contentTypeName
     databaseId
     date
     dateGmt
@@ -21,6 +22,8 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     featuredImageId
     guid
     id
+    isContentNode
+    isTermNode
     lastEditedBy {
       node {
         id
@@ -29,6 +32,38 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     link
     modified
     modifiedGmt
+    PartnerDetails {
+      fieldGroupName
+      partnerDescription
+      partnerLogo {
+        __typename
+        id
+      }
+      pdfFile1 {
+        __typename
+        id
+      }
+      pdfFile2 {
+        __typename
+        id
+      }
+      pdfFile3 {
+        __typename
+        id
+      }
+      pdfFile4 {
+        __typename
+        id
+      }
+      pdfFile5 {
+        __typename
+        id
+      }
+      pdfFile6 {
+        __typename
+        id
+      }
+    }
     slug
     status
     template {

@@ -34,6 +34,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           id
         }
       }
+      contentTypeName
       databaseId
       date
       dateGmt
@@ -43,6 +44,8 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       fileSize
       guid
       id
+      isContentNode
+      isTermNode
       lastEditedBy {
         node {
           id
