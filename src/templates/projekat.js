@@ -127,7 +127,6 @@ class Projekat extends React.Component {
       modalShow: false,
       modalCurrent: 0,
     }
-    console.log("Page Context:", this.props.pageContext)
 
     this.handlePortfolioClick = this.handlePortfolioClick.bind(this)
     this.setModal = this.setModal.bind(this)

@@ -29,6 +29,7 @@ const PartnerPage = ({ data, pageContext }) => {
     }
     return null
   }
+
   sal()
   return (
     <Layout>
@@ -122,6 +123,7 @@ const PartnerPage = ({ data, pageContext }) => {
                     {createPdfLink(pdfFile4, partner.slug).title}
                   </a>
                 )}
+
                 {createPdfLink(pdfFile5, partner.slug) && (
                   <a
                     className="pdf-tag custom-card p-2"
