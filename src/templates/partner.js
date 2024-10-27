@@ -66,7 +66,7 @@ const PartnerPage = ({ data, pageContext }) => {
             <div className="col-12 col-md-3">
               <div className="partner__text_holder-right font-weight-light">
                 <div className="custom-card text-center">
-                  <a href="https://www.jung.de/en/">
+                  <a href={partner.PartnerDetails.partnerLink}>
                     <div className="img-wrapper-fluid p-2">
                       <Img
                         fluid={
@@ -106,7 +106,7 @@ const PartnerPage = ({ data, pageContext }) => {
                 {createPdfLink(pdfFile3, partner.slug) && (
                   <a
                     className="pdf-tag custom-card p-2"
-                    href={createPdfLink(pdfFile1, partner.slug).url}
+                    href={createPdfLink(pdfFile3, partner.slug).url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -180,6 +180,7 @@ export const query = graphql`
       id
       title
       PartnerDetails {
+        partnerLink
         partnerDescription
         partnerLogo {
           altText

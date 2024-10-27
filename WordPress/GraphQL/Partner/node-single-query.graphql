@@ -35,6 +35,7 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     PartnerDetails {
       fieldGroupName
       partnerDescription
+      partnerLink
       partnerLogo {
         __typename
         id

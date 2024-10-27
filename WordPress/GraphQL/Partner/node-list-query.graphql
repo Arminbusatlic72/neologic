@@ -36,6 +36,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       PartnerDetails {
         fieldGroupName
         partnerDescription
+        partnerLink
         partnerLogo {
           __typename
           id
