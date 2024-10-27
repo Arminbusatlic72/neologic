@@ -393,18 +393,17 @@ class Projekat extends React.Component {
                   to={`/projekat/${previousProject}`}
                   className="project-navigation-link previous-link"
                 >
-                  <span className="arrow">←</span>
-                  Previous: {previousProjectTitle}
+                  <span className="arrow">←</span>&nbsp;{previousProjectTitle}
                 </Link>
               ) : (
-                <div className="empty-link" /> // Placeholder div for spacing
+                <div className="empty-link" />
               )}
               {nextProject && (
                 <Link
                   to={`/projekat/${nextProject}`}
                   className="project-navigation-link next-link"
                 >
-                  Next: {nextProjectTitle} <span className="arrow">→</span>
+                  {nextProjectTitle} <span className="arrow">→</span>
                 </Link>
               )}
             </div>

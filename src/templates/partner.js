@@ -153,8 +153,7 @@ const PartnerPage = ({ data, pageContext }) => {
                 to={`/partneri/${previousPartner}`}
                 className="navigation-link previous-link"
               >
-                <span className="arrow">←</span>
-                Previous: {previousPartner}
+                <span className="arrow">←</span> &nbsp;{previousPartner}
               </Link>
             ) : (
               <div className="empty-link" /> // Placeholder div for spacing
@@ -164,7 +163,7 @@ const PartnerPage = ({ data, pageContext }) => {
                 to={`/partneri/${nextPartner}`}
                 className="navigation-link next-link"
               >
-                Next: {nextPartner} <span className="arrow">→</span>
+                {nextPartner} <span className="arrow">→</span>
               </Link>
             )}
           </div>
