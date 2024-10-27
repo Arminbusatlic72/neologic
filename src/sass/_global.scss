@@ -265,3 +265,9 @@ hr.light {
 .social-media__list-item i:hover {
   color: $primary;
 }
+
+.social-media__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

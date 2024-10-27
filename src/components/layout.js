@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.scss"
+import Icon from "../images/sp-icon-neologic.png"
 
 const getScrollNode = element => {
   return (
@@ -77,6 +78,18 @@ export default class Layout extends React.Component {
                         aria-label="Link"
                         className="fab fa-2x fa-instagram-square text-muted"
                       ></i>
+                    </a>
+                  </li>
+                  <li className="p-2 social-media__list-item">
+                    <a
+                      href="https://www.superprostor.com/profesionalci/neologic"
+                      className="mb-1"
+                    >
+                      <img
+                        src={Icon} // replace with your correct path
+                        alt="Instagram"
+                        className="" // adjust size if needed
+                      />
                     </a>
                   </li>
                 </ul>
