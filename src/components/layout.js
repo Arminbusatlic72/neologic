@@ -85,11 +85,7 @@ export default class Layout extends React.Component {
                       href="https://www.superprostor.com/profesionalci/neologic"
                       className="mb-1"
                     >
-                      <img
-                        src={Icon} // replace with your correct path
-                        alt="Instagram"
-                        className="" // adjust size if needed
-                      />
+                      <img src={Icon} alt="Superprostor" className="" />
                     </a>
                   </li>
                 </ul>
