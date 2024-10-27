@@ -83,7 +83,7 @@ export default class Layout extends React.Component {
                   <li className="p-2 social-media__list-item">
                     <a
                       href="https://www.superprostor.com/profesionalci/neologic"
-                      className="mb-1"
+                      className="d-block mb-1"
                     >
                       <img src={Icon} alt="Superprostor" className="" />
                     </a>
